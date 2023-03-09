@@ -10,13 +10,40 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="../fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="../fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="../fonts/PTMonoRegular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../fonts/PTMono-Regular.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body>
   <div class="wrapper">
-    <header>
-      <div class="header"></div>
+    <header class="header-wrapper">
+      <div class="header">
+        <a href="index.html" class="header__logo-link">
+          <picture>
+            <source media="(max-width: 768px)" srcset="../img/svg/main-logo-mobile.svg">
+            <img src="./img/svg/main-logo.svg" width="215" height="55" alt="Логотип компании SmartDevice"
+              class="header__logo-image">
+          </picture>
+        </a>
+        <div class="header__contacts">
+          <div class="header__contact-wrapper header__contact-wrapper--email">
+            <a href="mailto:info@sd.ru" class="header__contact-link">
+              <svg width="20" height="20" class="header__contact-icon">
+                <use xlink:href="img/sprite.svg#email-icon"></use>
+              </svg>
+              <span class="header__contact">info@sd.ru</span>
+            </a>
+          </div>
+          <div class="header__contact-wrapper header__contact-wrapper--tel">
+            <a href="tel:+74950005252" class="header__contact-link">
+              <svg width="20" height="20" class="header__contact-icon">
+                <use xlink:href="img/sprite.svg#phone-icon"></use>
+              </svg>
+              <span class="header__contact">+7 (495) 000 52 52</span>
+            </a>
+          </div>
+        </div>
+        <button class="header__modal-open">Заказать звонок</button>
+      </div>
     </header>
 
     <main>
