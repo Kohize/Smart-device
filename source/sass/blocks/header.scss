@@ -30,6 +30,7 @@
 
 .header-wrapper {
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  z-index: 1;
 
   @media (min-width: $vp-1024) {
     top: 0;
