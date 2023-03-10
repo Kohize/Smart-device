@@ -19,7 +19,7 @@
       <div class="header">
         <a href="index.html" class="header__logo-link">
           <picture>
-            <source media="(max-width: 768px)" srcset="../img/svg/main-logo-mobile.svg">
+            <source media="(max-width: 767px)" srcset="../img/svg/main-logo-mobile.svg">
             <img src="./img/svg/main-logo.svg" width="215" height="55" alt="Логотип компании SmartDevice"
               class="header__logo-image">
           </picture>
@@ -52,8 +52,87 @@
       </section>
     </main>
 
-    <footer>
-      <div class="footer"></div>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <section class="socials">
+          <a href="index.html" class="socials__logo-link">
+            <img src="./img/svg/main-logo.svg" width="215" height="55" alt="Логотип компании SmartDevice"
+              class="socials__logo-image">
+          </a>
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <svg width="30" height="30" class="socials__icon">
+                  <use xlink:href="img/sprite.svg#ok-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <svg width="30" height="30" class="socials__icon">
+                  <use xlink:href="img/sprite.svg#vk-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <svg width="30" height="30" class="socials__icon">
+                  <use xlink:href="img/sprite.svg#pinterest-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <div class="footer-accordion" data-accordion="parent" data-destroy="(max-width: 767px)" data-single>
+          <section class="sections" data-accordion="element">
+            <button class="sections__button" type="button" data-accordion="button">Разделы сайта</button>
+            <h2 class="sections__title">Разделы сайта</h2>
+            <div class="sections__wrapper" data-accordion="content">
+              <ul class="sections__list">
+                <li class="sections__item">
+                  <a href="#" class="sections__link">О Компании</a>
+                </li>
+                <li class="sections__item">
+                  <a href="#" class="sections__link">Продукты</a>
+                </li>
+                <li class="sections__item">
+                  <a href="#" class="sections__link">Производство печатных<br>плат</a>
+                </li>
+                <li class="sections__item">
+                  <a href="#" class="sections__link">Монтаж печатных плат</a>
+                </li>
+                <li class="sections__item">
+                  <a href="#" class="sections__link">Комплектующие</a>
+                </li>
+                <li class="sections__item">
+                  <a href="#" class="sections__link">Доставка</a>
+                </li>
+                <li class="sections__item">
+                  <a href="#" class="sections__link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="location" data-accordion="element">
+            <button class="location__button" type="button" data-accordion="button">Наш Офис</button>
+            <h2 class="location__title">Наш офис</h2>
+            <div class="location__wrapper" data-accordion="content">
+              <p class="location__address">г. Мытищи, Олимпийский проспект,<br>д.10</p>
+              <ul class="location__list">
+                <li class="location__item">
+                  <a href="tel:+74955894050" class="location__tel">+7 (495) 589-40-50</a>
+                </li>
+                <li class="location__item">
+                  <a href="tel:+79253895829" class="location__tel">+7 (925) 389-58-29</a>
+                </li>
+                <li class="location__item">
+                  <a href="tel:+79253647813" class="location__tel">+7 (925) 364-78-13</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
     </footer>
   </div>
 

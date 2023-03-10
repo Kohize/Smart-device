@@ -1,0 +1,136 @@
+.sections {
+  min-width: 422px;
+  padding: 10px 0 0 0;
+  margin: 0 78px 0 0;
+
+  @media (max-width: $vp-1440) {
+    margin: 0;
+  }
+
+  @media (max-width: 1023px) {
+    min-width: auto;
+    margin: 0 160px 0 0;
+  }
+
+  @media (max-width: 767px) {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.sections__title {
+  font-family: 'RobotoCondensed', "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.sections__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 150px;
+
+  @media (max-width: 1023px) {
+    flex-wrap: nowrap;
+    height: auto;
+  }
+
+  @media (max-width: 767px) {
+    height: auto;
+  }
+}
+
+.sections__item {
+  max-width: 220px;
+
+  &:not(:last-child) {
+    margin: 0 0 5px 0;
+  }
+}
+
+.sections__link {
+  font-family: 'PTMono', "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:active {
+    color: #00B3FF;
+  }
+}
+
+.sections .is-active {
+  padding: 0 0 25px 0;
+}
+
+.sections__wrapper {
+  @media (max-width: 767px) {
+    padding: 0 0 0 25px
+  }
+}
+
+.sections__button {
+  @media (max-width: 767px) {
+    position: relative;
+    border: 0;
+    background: transparent;
+    padding: 20px 25px;
+    color: #ffffff;
+    font-family: 'RobotoCondensed', "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: start;
+    border-top: 1px solid rgba(248, 253, 255, 0.7);
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 15px;
+      top: 27px;
+      right: 30px;
+      background: #C4C4C4;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 15px;
+      top: 27px;
+      right: 30px;
+      background: #C4C4C4;
+      transform: rotate(90deg);
+    }
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}

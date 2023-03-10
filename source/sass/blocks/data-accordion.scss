@@ -1,0 +1,23 @@
+[data-accordion="element"].is-active>[data-accordion="content"] {
+  max-height: 100%;
+}
+
+[data-accordion="parent"].no-transition [data-accordion="content"] {
+  transition: none;
+}
+
+[data-accordion="content"] {
+  max-height: 0;
+  transition: max-height 0.3s;
+  overflow: hidden;
+
+  @media (max-width: 767px) {
+    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+  }
+}
+
+[data-accordion="element"].is-active>[data-accordion="button"] {
+  &::after {
+    display: none;
+  }
+}
