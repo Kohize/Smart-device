@@ -1,0 +1,143 @@
+.benefits {
+  padding: 0 25px;
+  margin: 0 0 125px 0;
+
+  @media (max-width: 1023px) {
+    padding: 0;
+    margin: -40px 0 80px 0;
+  }
+
+  @media (max-width: 767px) {
+    margin: -75px 0 50px 0;
+  }
+}
+
+.benefits__wrapper {
+  max-width: 1220px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 300px 300px;
+  margin: 0 auto;
+  column-gap: 1.4%;
+  row-gap: 5%;
+
+  @media (max-width: $vp-1440) {
+    padding: 0 25px;
+  }
+
+  @media (max-width: 1023px) {
+    grid-template-rows: 360px 360px;
+    padding: 0 50px;
+    column-gap: 2.4%;
+    row-gap: 4%;
+  }
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+    column-gap: 0;
+    row-gap: 30px;
+  }
+}
+
+.benefits__item {
+  position: relative;
+  border: 1px solid #EBEBEB;
+  padding: 40px 45px 35px 45px;
+  box-sizing: border-box;
+
+  &:hover {
+    border: 1px solid #00B2FF;
+    background-color: #00B2FF;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: #00B2FF;
+    width: 5px;
+    height: 300px;
+    left: 0;
+    top: 0;
+  }
+
+  @media (max-width: 1023px) {
+    padding: 40px 35px 35px 45px;
+
+    &::before {
+      height: 360px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 30px 30px 35px 30px;
+    min-height: 340px;
+
+    &::before {
+      height: 340px;
+    }
+  }
+}
+
+.benefits__item--small {
+  @media (max-width: 767px) {
+    min-height: 325px;
+  }
+}
+
+.benefits__icon {
+  fill: #00B2FF;
+  margin: 0 0 20px 0;
+
+  @media (max-width: 1023px) {
+    margin: 0 0 12px 0;
+  }
+}
+
+.benefits__title {
+  font-family: 'RobotoCondensed', "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 135%;
+  color: #00B2FF;
+  margin: 0 0 10px 0;
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+  }
+}
+
+.benefits__title--small {
+  @media (max-width: 767px) {
+    margin: 0 0 15px 0;
+  }
+}
+
+
+.benefits__description {
+  font-family: 'PTMono', "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  margin: 0;
+  color: #041827;
+
+  @media (max-width: 1023px) {
+    max-width: 235px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+
+.benefits__item:hover .benefits__title,
+.benefits__item:hover .benefits__description,
+.benefits__item:hover .benefits__icon {
+  color: #F2F5F7;
+  fill: #F2F5F6;
+}
