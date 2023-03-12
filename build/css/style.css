@@ -1728,7 +1728,7 @@ button,
   display: flex;
   max-width: 1220px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 94px;
 }
 
 .about__image {
@@ -1783,6 +1783,107 @@ button,
 .about__accordion-button:hover {
   background-color: #2a4e69;
   color: #ffffff;
+}
+
+.service {
+  background-color: #041827;
+  padding: 70px 0 140px 0;
+}
+
+.service__title {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #FFFFFF;
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto 53px;
+}
+
+.service__title--mobile {
+  display: none;
+}
+
+.service__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-column-gap: 7%;
+  -moz-column-gap: 7%;
+  column-gap: 7%;
+}
+
+.service__item {
+  max-width: 350px;
+  width: 100%;
+  min-height: 650px;
+  position: relative;
+}
+
+.service__item:hover {
+  -webkit-box-shadow: 0 0 11px rgba(42, 78, 105, 0.9);
+  box-shadow: 0 0 11px rgba(42, 78, 105, 0.9);
+}
+
+.service__item--production {
+  background-image: url(../../img/card-background-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.service__item--install {
+  background-image: url(../../img/card-background-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.service__item--parts {
+  background-image: url(../../img/card-background-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.service__type {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 50px 80px 0 40px;
+  max-width: 280px;
+  width: 100%;
+}
+
+.service__arrow {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #00B2FF;
+  border-radius: 3px 0px 0px 0px;
+  border: 0;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.service__item:hover .service__arrow {
+  background-color: #2a4e69;
 }
 
 /* @mixin hover-focus {
@@ -1896,6 +1997,10 @@ button,
 
   .about {
     padding: 0 25px;
+  }
+
+  .service {
+    padding: 70px 50px 140px 50px;
   }
 }
 
@@ -2047,6 +2152,7 @@ button,
 
   .about {
     padding: 0 50px 0 46px;
+    margin: 0 auto 76px;
   }
 
   .about__image {
@@ -2063,6 +2169,47 @@ button,
 
   .about__accordion-button {
     margin: 0;
+  }
+
+  .service {
+    padding: 48px 0 140px 0;
+  }
+
+  .service__title {
+    max-width: 670px;
+    margin: 0 auto 36px;
+  }
+
+  .service__wrapper {
+    max-width: 670px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .service__item {
+    max-width: 670px;
+    min-height: 250px;
+  }
+
+  .service__item:not(:last-child) {
+    margin: 0 0 30px 0;
+  }
+
+  .service__item--production {
+    background-image: url(../../img/card-background-1-tablet.png);
+  }
+
+  .service__item--install {
+    background-image: url(../../img/card-background-2-tablet.png);
+  }
+
+  .service__item--parts {
+    background-image: url(../../img/card-background-3-tablet.png);
+  }
+
+  .service__type {
+    padding: 40px 0 0 45px;
+    max-width: 195px;
   }
 }
 
@@ -2364,6 +2511,49 @@ button,
   .about__accordion-button {
     width: 160px;
     height: 35px;
+  }
+
+  .service__title {
+    display: none;
+  }
+
+  .service__title--mobile {
+    display: block;
+    max-width: 270px;
+    font-size: 28px;
+    line-height: 140%;
+    margin: 0 auto 25px;
+  }
+
+  .service__wrapper {
+    max-width: 270px;
+  }
+
+  .service__item {
+    max-width: 270px;
+  }
+
+  .service__item--production {
+    background-image: url(../../img/card-background-1-mobile.png);
+  }
+
+  .service__item--install {
+    background-image: url(../../img/card-background-2-mobile.png);
+  }
+
+  .service__item--parts {
+    background-image: url(../../img/card-background-3-mobile.png);
+  }
+
+  .service__type {
+    padding: 30px 0 0 30px;
+    max-width: 165px;
+    font-size: 18px;
+  }
+
+  .service__arrow {
+    width: 40px;
+    height: 40px;
   }
 }
 

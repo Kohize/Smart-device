@@ -1,0 +1,176 @@
+.service {
+  background-color: #041827;
+  padding: 70px 0 140px 0;
+
+  @media (max-width: $vp-1440) {
+    padding: 70px 50px 140px 50px;
+  }
+
+  @media (max-width: 1023px) {
+    padding: 48px 0 140px 0;
+  }
+}
+
+.service__title {
+  font-family: 'RobotoCondensed', "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #FFFFFF;
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto 53px;
+
+  @media (max-width: 1023px) {
+    max-width: 670px;
+    margin: 0 auto 36px;
+  }
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.service__title--mobile {
+  display: none;
+
+  @media (max-width: 767px) {
+    display: block;
+    max-width: 270px;
+    font-size: 28px;
+    line-height: 140%;
+    margin: 0 auto 25px;
+  }
+}
+
+.service__wrapper {
+  display: flex;
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+  column-gap: 7%;
+
+  @media (max-width: 1023px) {
+    max-width: 670px;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 270px;
+  }
+}
+
+.service__item {
+  max-width: 350px;
+  width: 100%;
+  min-height: 650px;
+  position: relative;
+
+  &:hover {
+    box-shadow: 0 0 11px rgba(42, 78, 105, .9);
+  }
+
+  @media (max-width: 1023px) {
+    max-width: 670px;
+    min-height: 250px;
+
+    &:not(:last-child) {
+      margin: 0 0 30px 0
+    }
+  }
+
+  @media (max-width: 767px) {
+    max-width: 270px;
+  }
+}
+
+.service__item--production {
+  background-image: url(../../img/card-background-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: 1023px) {
+    background-image: url(../../img/card-background-1-tablet.png);
+  }
+
+  @media (max-width: 767px) {
+    background-image: url(../../img/card-background-1-mobile.png);
+  }
+}
+
+.service__item--install {
+  background-image: url(../../img/card-background-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: 1023px) {
+    background-image: url(../../img/card-background-2-tablet.png);
+  }
+
+  @media (max-width: 767px) {
+    background-image: url(../../img/card-background-2-mobile.png);
+  }
+}
+
+.service__item--parts {
+  background-image: url(../../img/card-background-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: 1023px) {
+    background-image: url(../../img/card-background-3-tablet.png);
+  }
+
+  @media (max-width: 767px) {
+    background-image: url(../../img/card-background-3-mobile.png);
+  }
+}
+
+.service__type {
+  font-family: 'RobotoCondensed', "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 50px 80px 0 40px;
+  max-width: 280px;
+  width: 100%;
+
+  @media (max-width: 1023px) {
+    padding: 40px 0 0 45px;
+    max-width: 195px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 30px 0 0 30px;
+    max-width: 165px;
+    font-size: 18px;
+  }
+}
+
+.service__arrow {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #00B2FF;
+  border-radius: 3px 0px 0px 0px;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 767px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.service__item:hover .service__arrow {
+  background-color: #2a4e69;
+}
