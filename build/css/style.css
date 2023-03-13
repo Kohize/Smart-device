@@ -730,7 +730,8 @@ button,
   position: relative;
   width: 600px;
   padding: 40px;
-  background-color: #ffffff;
+  background: #00B3FF;
+  border-radius: 3px;
 }
 
 .modal__close-btn {
@@ -744,6 +745,10 @@ button,
   background: rgba(255, 255, 255, 0);
   border: none;
   cursor: pointer;
+}
+
+.modal__close-btn:hover {
+  background: rgba(4, 20, 39, 0.5);
 }
 
 .modal--responsive .modal__content {
@@ -773,6 +778,205 @@ button,
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
+}
+
+.modal__heading {
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.modal__heading h3 {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 140.62%;
+  color: #FFFFFF;
+  margin: 0 0 15px 0;
+}
+
+.modal__heading p {
+  font-family: "PTMono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin: 0 0 40px 0;
+}
+
+.modal__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.modal__input:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+
+.modal__input input {
+  font-family: "PTMono", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 420px;
+  width: 100%;
+  height: 50px;
+  background: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  border: 0;
+}
+
+.modal__input input::-webkit-input-placeholder {
+  color: #ffffff;
+  padding: 15px 0 15px 15px;
+}
+
+.modal__input input::-moz-placeholder {
+  color: #ffffff;
+  padding: 15px 0 15px 15px;
+}
+
+.modal__input input:-ms-input-placeholder {
+  color: #ffffff;
+  padding: 15px 0 15px 15px;
+}
+
+.modal__input input::-ms-input-placeholder {
+  color: #ffffff;
+  padding: 15px 0 15px 15px;
+}
+
+.modal__input input::placeholder {
+  color: #ffffff;
+  padding: 15px 0 15px 15px;
+}
+
+.modal__input textarea {
+  font-family: "PTMono", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 420px;
+  width: 100%;
+  height: 155px;
+  background: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  border: 0;
+}
+
+.modal__input textarea::-webkit-input-placeholder {
+  color: #ffffff;
+  padding: 25px 0 0 15px;
+}
+
+.modal__input textarea::-moz-placeholder {
+  color: #ffffff;
+  padding: 25px 0 0 15px;
+}
+
+.modal__input textarea:-ms-input-placeholder {
+  color: #ffffff;
+  padding: 25px 0 0 15px;
+}
+
+.modal__input textarea::-ms-input-placeholder {
+  color: #ffffff;
+  padding: 25px 0 0 15px;
+}
+
+.modal__input textarea::placeholder {
+  color: #ffffff;
+  padding: 25px 0 0 15px;
+}
+
+.modal__button button {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-style: normal;
+  max-width: 420px;
+  width: 100%;
+  height: 45px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: 0;
+  background: #041427;
+  border-radius: 3px;
+  margin: 0 0 20px 0;
+  cursor: pointer;
+}
+
+.modal__button button:hover {
+  background-color: rgba(4, 20, 39, 0.15);
+  color: #041827;
+}
+
+.modal__checkbox {
+  position: relative;
+}
+
+.modal__checkbox label {
+  font-family: "PTMono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  padding: 0 0 0 34px;
+}
+
+.modal__checkbox input {
+  width: 15px;
+  height: 15px;
+  top: 2px;
+  left: 9px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.modal__checkbox-mark {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+  top: 4px;
+  left: 10px;
+}
+
+.modal__checkbox input:checked ~ .modal__checkbox-mark::before {
+  position: absolute;
+  content: "";
+  background: url(../../img/svg/vector.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 7px;
+  height: 4px;
+  top: 4px;
+  right: 3px;
 }
 
 .custom-input,
@@ -1580,7 +1784,7 @@ button,
 }
 
 .promo {
-  padding: 315px 0 280px 0;
+  padding: 315px 0 293px 0;
   background-image: url("../../img/promo-background.png");
   background-repeat: no-repeat;
   background-color: #041827;
@@ -1596,7 +1800,7 @@ button,
   margin: 0 auto;
 }
 
-.promo__title {
+.promo__wrapper h1 {
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1609,7 +1813,7 @@ button,
   max-width: 720px;
 }
 
-.promo__description {
+.promo__wrapper p {
   font-family: "PTMono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1617,7 +1821,7 @@ button,
   line-height: 155%;
   color: #F2F5F7;
   max-width: 685px;
-  margin: 0 0 50px 0;
+  margin: 0 0 63px 0;
 }
 
 .promo__button {
@@ -1691,12 +1895,7 @@ button,
   top: 0;
 }
 
-.benefits__icon {
-  fill: #00B2FF;
-  margin: 0 0 20px 0;
-}
-
-.benefits__title {
+.benefits__item h3 {
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1706,7 +1905,7 @@ button,
   margin: 0 0 10px 0;
 }
 
-.benefits__description {
+.benefits__item p {
   font-family: "PTMono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1714,6 +1913,11 @@ button,
   line-height: 135%;
   margin: 0;
   color: #041827;
+}
+
+.benefits__icon {
+  fill: #00B2FF;
+  margin: 0 0 20px 0;
 }
 
 .benefits__item:hover .benefits__title,
@@ -1741,7 +1945,7 @@ button,
   padding: 5px 0 20px 0;
 }
 
-.about__title {
+.about__content h2 {
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1751,7 +1955,7 @@ button,
   margin: 0 0 15px 0;
 }
 
-.about__description {
+.about__content p {
   font-family: "PTMono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1760,7 +1964,7 @@ button,
   color: #041827;
 }
 
-.about__description:not(:last-child) {
+.about__content p:not(:last-child) {
   margin: 0 0 20px 0;
 }
 
@@ -1792,7 +1996,7 @@ button,
   padding: 70px 0 140px 0;
 }
 
-.service__title {
+.service h2 {
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1804,8 +2008,17 @@ button,
   margin: 0 auto 53px;
 }
 
-.service__title--mobile {
+.service p {
   display: none;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #FFFFFF;
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto 53px;
 }
 
 .service__wrapper {
@@ -1832,6 +2045,19 @@ button,
   box-shadow: 0 0 11px rgba(42, 78, 105, 0.9);
 }
 
+.service__item h3 {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 50px 80px 0 40px;
+  max-width: 280px;
+  width: 100%;
+}
+
 .service__item--production {
   background-image: url(../../img/card-background-1.png);
   background-repeat: no-repeat;
@@ -1848,19 +2074,6 @@ button,
   background-image: url(../../img/card-background-3.png);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.service__type {
-  font-family: "RobotoCondensed", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  color: #FFFFFF;
-  margin: 0;
-  padding: 50px 80px 0 40px;
-  max-width: 280px;
-  width: 100%;
 }
 
 .service__arrow {
@@ -1929,13 +2142,13 @@ button,
 }
 
 .form__content {
-  min-width: 580px;
+  max-width: 580px;
   width: 100%;
   min-height: 420px;
   z-index: 4;
 }
 
-.form__title {
+.form__content h3 {
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1945,7 +2158,7 @@ button,
   margin: 0 0 15px 0;
 }
 
-.form__description {
+.form__content p {
   font-family: "PTMono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2062,7 +2275,7 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #FFFFFF;
-  max-width: 265px;
+  min-width: 265px;
   width: 100%;
   height: 45px;
   background: #041427;
@@ -2351,29 +2564,32 @@ button,
 
   .promo {
     background-image: url("../../img/promo-background-tablet.png");
-    padding: 200px 0 205px 0;
+    padding: 200px 0 221px 0;
   }
 
   .promo__wrapper {
     width: 670px;
+    padding: 0 50px;
   }
 
-  .promo__title {
+  .promo__wrapper h1 {
     max-width: 670px;
     font-size: 64px;
     line-height: 75px;
     margin: 0;
   }
 
-  .promo__description {
-    max-width: 670px;
+  .promo__wrapper p {
+    width: 670px;
     font-size: 22px;
     line-height: 155%;
-    margin: 0 0 60px 0;
+    margin: 0 0 72px 0;
   }
 
   .promo__button {
     margin-left: 45px;
+    width: 100%;
+    min-width: 410px;
   }
 
   .benefits {
@@ -2399,16 +2615,16 @@ button,
     height: 360px;
   }
 
+  .benefits__item p {
+    max-width: 235px;
+  }
+
+  .benefits__item--small h3 {
+    margin: 0 0 5px 0;
+  }
+
   .benefits__icon {
     margin: 0 0 12px 0;
-  }
-
-  .benefits__title--small {
-    margin: 0 0 14px 0;
-  }
-
-  .benefits__description {
-    max-width: 235px;
   }
 
   .about {
@@ -2424,7 +2640,7 @@ button,
     padding: 0;
   }
 
-  .about__title {
+  .about__content h2 {
     margin: 0 0 10px 0;
   }
 
@@ -2433,10 +2649,10 @@ button,
   }
 
   .service {
-    padding: 49px 0 86px 0;
+    padding: 50px 0 85px 0;
   }
 
-  .service__title {
+  .service h2 {
     max-width: 670px;
     margin: 0 auto 36px;
   }
@@ -2456,6 +2672,11 @@ button,
     margin: 0 0 30px 0;
   }
 
+  .service__item h3 {
+    padding: 40px 0 0 45px;
+    max-width: 195px;
+  }
+
   .service__item--production {
     background-image: url(../../img/card-background-1-tablet.png);
   }
@@ -2466,11 +2687,6 @@ button,
 
   .service__item--parts {
     background-image: url(../../img/card-background-3-tablet.png);
-  }
-
-  .service__type {
-    padding: 40px 0 0 45px;
-    max-width: 195px;
   }
 
   .form {
@@ -2500,11 +2716,11 @@ button,
     padding: 0 50px;
   }
 
-  .form__title {
+  .form__content h3 {
     margin: 0 0 5px 0;
   }
 
-  .form__description {
+  .form__content p {
     margin: 0 0 25px 0;
   }
 
@@ -2534,6 +2750,10 @@ button,
 
   .form__input--question textarea::placeholder {
     padding: 32px 0 0 15px;
+  }
+
+  .form__button button {
+    max-width: 265px;
   }
 
   .form__checkbox label {
@@ -2741,18 +2961,20 @@ button,
   }
 
   .promo__wrapper {
-    width: 270px;
+    min-width: 270px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 25px;
   }
 
-  .promo__title {
-    width: 270px;
+  .promo__wrapper h1 {
     font-size: 36px;
     line-height: 42px;
     margin: 0 0 7px 0;
   }
 
-  .promo__description {
-    width: 270px;
+  .promo__wrapper p {
+    width: 100%;
     font-size: 14px;
     line-height: 155%;
     margin: 0 0 42px 0;
@@ -2763,7 +2985,7 @@ button,
   }
 
   .promo__button--alt {
-    width: 270px;
+    min-width: 270px;
     display: block;
     font-size: 14px;
     line-height: 16px;
@@ -2795,19 +3017,23 @@ button,
   }
 
   .benefits__item::before {
-    height: 340px;
+    height: 324px;
+  }
+
+  .benefits__item h3 {
+    font-size: 20px;
+  }
+
+  .benefits__item p {
+    font-size: 14px;
   }
 
   .benefits__item--small {
     min-height: 325px;
   }
 
-  .benefits__title {
-    font-size: 20px;
-  }
-
-  .benefits__description {
-    font-size: 14px;
+  .benefits__item--small h3 {
+    margin: 0 0 15px 0;
   }
 
   .about {
@@ -2818,26 +3044,26 @@ button,
     display: none;
   }
 
-  .about__title {
+  .about__content h2 {
     font-size: 28px;
     line-height: 140.62%;
     margin: 0 0 15px 0;
   }
 
-  .about__description {
+  .about__content p {
     font-size: 14px;
     line-height: 134.4%;
   }
 
-  .about__description:not(:last-child) {
+  .about__content p:not(:last-child) {
     margin: 0 0 18px 0;
   }
 
-  .about__description .is-closed {
+  .about__content span.is-closed {
     display: none;
   }
 
-  .about__description .is-opened {
+  .about__content span.is-opened {
     display: block;
   }
 
@@ -2846,11 +3072,11 @@ button,
     height: 35px;
   }
 
-  .service__title {
+  .service h2 {
     display: none;
   }
 
-  .service__title--mobile {
+  .service p {
     display: block;
     max-width: 270px;
     font-size: 28px;
@@ -2866,6 +3092,12 @@ button,
     max-width: 270px;
   }
 
+  .service__item h3 {
+    padding: 30px 0 0 30px;
+    max-width: 165px;
+    font-size: 18px;
+  }
+
   .service__item--production {
     background-image: url(../../img/card-background-1-mobile.png);
   }
@@ -2876,12 +3108,6 @@ button,
 
   .service__item--parts {
     background-image: url(../../img/card-background-3-mobile.png);
-  }
-
-  .service__type {
-    padding: 30px 0 0 30px;
-    max-width: 165px;
-    font-size: 18px;
   }
 
   .service__arrow {
@@ -2903,12 +3129,12 @@ button,
     padding: 0 25px;
   }
 
-  .form__title {
+  .form__content h3 {
     font-size: 30px;
     line-height: 140.62%;
   }
 
-  .form__description {
+  .form__content p {
     font-size: 14px;
     line-height: 134.4%;
     margin: 0 0 35px 0;

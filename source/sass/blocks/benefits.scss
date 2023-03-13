@@ -76,7 +76,39 @@
     min-height: 340px;
 
     &::before {
-      height: 340px;
+      height: 324px;
+    }
+  }
+
+  h3 {
+    font-family: 'RobotoCondensed', "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 135%;
+    color: #00B2FF;
+    margin: 0 0 10px 0;
+
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
+  }
+
+  p {
+    font-family: 'PTMono', "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    margin: 0;
+    color: #041827;
+
+    @media (max-width: 1023px) {
+      max-width: 235px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 14px;
     }
   }
 }
@@ -84,6 +116,16 @@
 .benefits__item--small {
   @media (max-width: 767px) {
     min-height: 325px;
+  }
+
+  h3 {
+    @media (max-width: 1023px) {
+      margin: 0 0 5px 0;
+    }
+
+    @media (max-width: 767px) {
+      margin: 0 0 15px 0;
+    }
   }
 }
 
@@ -93,45 +135,6 @@
 
   @media (max-width: 1023px) {
     margin: 0 0 12px 0;
-  }
-}
-
-.benefits__title {
-  font-family: 'RobotoCondensed', "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 135%;
-  color: #00B2FF;
-  margin: 0 0 10px 0;
-
-  @media (max-width: 767px) {
-    font-size: 20px;
-  }
-}
-
-.benefits__title--small {
-  @media (max-width: 1023px) {
-    margin: 0 0 14px 0;
-  }
-}
-
-
-.benefits__description {
-  font-family: 'PTMono', "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 135%;
-  margin: 0;
-  color: #041827;
-
-  @media (max-width: 1023px) {
-    max-width: 235px;
-  }
-
-  @media (max-width: 767px) {
-    font-size: 14px;
   }
 }
 

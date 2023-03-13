@@ -7,40 +7,49 @@
   }
 
   @media (max-width: 1023px) {
-    padding: 49px 0 86px 0;
-  }
-}
-
-.service__title {
-  font-family: 'RobotoCondensed', "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 51px;
-  color: #FFFFFF;
-  max-width: 1220px;
-  width: 100%;
-  margin: 0 auto 53px;
-
-  @media (max-width: 1023px) {
-    max-width: 670px;
-    margin: 0 auto 36px;
+    padding: 50px 0 85px 0;
   }
 
-  @media (max-width: 767px) {
+  h2 {
+    font-family: 'RobotoCondensed', "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 51px;
+    color: #FFFFFF;
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto 53px;
+
+    @media (max-width: 1023px) {
+      max-width: 670px;
+      margin: 0 auto 36px;
+    }
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  p {
     display: none;
-  }
-}
+    font-family: 'RobotoCondensed', "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 51px;
+    color: #FFFFFF;
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto 53px;
 
-.service__title--mobile {
-  display: none;
-
-  @media (max-width: 767px) {
-    display: block;
-    max-width: 270px;
-    font-size: 28px;
-    line-height: 140%;
-    margin: 0 auto 25px;
+    @media (max-width: 767px) {
+      display: block;
+      max-width: 270px;
+      font-size: 28px;
+      line-height: 140%;
+      margin: 0 auto 25px;
+    }
   }
 }
 
@@ -83,6 +92,30 @@
   @media (max-width: 767px) {
     max-width: 270px;
   }
+
+  h3 {
+    font-family: 'RobotoCondensed', "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 50px 80px 0 40px;
+    max-width: 280px;
+    width: 100%;
+
+    @media (max-width: 1023px) {
+      padding: 40px 0 0 45px;
+      max-width: 195px;
+    }
+
+    @media (max-width: 767px) {
+      padding: 30px 0 0 30px;
+      max-width: 165px;
+      font-size: 18px;
+    }
+  }
 }
 
 .service__item--production {
@@ -124,30 +157,6 @@
 
   @media (max-width: 767px) {
     background-image: url(../../img/card-background-3-mobile.png);
-  }
-}
-
-.service__type {
-  font-family: 'RobotoCondensed', "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  color: #FFFFFF;
-  margin: 0;
-  padding: 50px 80px 0 40px;
-  max-width: 280px;
-  width: 100%;
-
-  @media (max-width: 1023px) {
-    padding: 40px 0 0 45px;
-    max-width: 195px;
-  }
-
-  @media (max-width: 767px) {
-    padding: 30px 0 0 30px;
-    max-width: 165px;
-    font-size: 18px;
   }
 }
 
