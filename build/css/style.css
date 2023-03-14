@@ -1795,7 +1795,7 @@ button,
 
 .promo {
   padding: 315px 0 293px 0;
-  background-image: url("../../img/promo-background.png");
+  background-image: url("img/promo-background.png");
   background-repeat: no-repeat;
   background-color: #041827;
   background-size: cover;
@@ -2082,13 +2082,13 @@ button,
 }
 
 .service__item--install {
-  background-image: url("../../img/card-background-2.png");
+  background-image: url("../img/card-background-2.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .service__item--parts {
-  background-image: url("../../img/card-background-3.png");
+  background-image: url("./img/card-background-3.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2594,7 +2594,7 @@ button,
   }
 
   .promo {
-    background-image: url("../../img/promo-background-tablet.png");
+    background-image: url("img/promo-background-tablet.png");
     padding: 200px 0 221px 0;
   }
 
@@ -2708,15 +2708,15 @@ button,
   }
 
   .service__item--production {
-    background-image: url("../../img/card-background-1-tablet.png");
+    background-image: url("../img/card-background-1-tablet.png");
   }
 
   .service__item--install {
-    background-image: url("../../img/card-background-2-tablet.png");
+    background-image: url("../img/card-background-2-tablet.png");
   }
 
   .service__item--parts {
-    background-image: url("../../img/card-background-3-tablet.png");
+    background-image: url("../img/card-background-3-tablet.png");
   }
 
   .form {
@@ -3010,7 +3010,7 @@ button,
   }
 
   .promo {
-    background-image: url("../../img/promo-background-mobile.png");
+    background-image: url("img/promo-background-mobile.png");
     padding: 200px 0 187px 0;
   }
 
@@ -3163,15 +3163,15 @@ button,
   }
 
   .service__item--production {
-    background-image: url("../../img/card-background-1-mobile.png");
+    background-image: url("../img/card-background-1-mobile.png");
   }
 
   .service__item--install {
-    background-image: url("../../img/card-background-2-mobile.png");
+    background-image: url("../img/card-background-2-mobile.png");
   }
 
   .service__item--parts {
-    background-image: url("../../img/card-background-3-mobile.png");
+    background-image: url("../img/card-background-3-mobile.png");
   }
 
   .service__arrow {
