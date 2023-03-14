@@ -1,6 +1,6 @@
 .promo {
   padding: 315px 0 293px 0;
-  background-image: url("./img/promo-background.png");
+  background-image: url("img/promo-background.png");
   background-repeat: no-repeat;
   background-color: #041827;
   background-size: cover;
@@ -10,12 +10,12 @@
   height: 100%;
 
   @media (max-width: 1023px) {
-    background-image: url("./img/promo-background-tablet.png");
+    background-image: url("img/promo-background-tablet.png");
     padding: 200px 0 221px 0;
   }
 
   @media (max-width: 767px) {
-    background-image: url("./img/promo-background-mobile.png");
+    background-image: url("img/promo-background-mobile.png");
     padding: 200px 0 187px 0;
   }
 }
