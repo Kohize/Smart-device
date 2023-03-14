@@ -2,6 +2,7 @@
   background-color: #00B3FF;
   position: relative;
   height: 840px;
+  display: flex;
 
   &::before {
     content: '';
@@ -42,10 +43,10 @@
   min-height: 420px;
   align-items: center;
   column-gap: 118px;
-  padding: 165px 0 417px 0;
+  padding: 0 0 80px 0;
 
   @media (max-width: 1400px) {
-    padding: 165px 10px 417px 15px;
+    padding: 0 25px;
   }
 
   @media (max-width: 1023px) {
@@ -58,6 +59,7 @@
   @media (max-width: 767px) {
     min-width: 270px;
     min-height: 750px;
+    padding: 50px 0 85px 0;
   }
 }
 
@@ -79,7 +81,7 @@
   @media (max-width: 1023px) {
     min-width: 670px;
     min-height: auto;
-    padding: 0 50px;
+    margin: 0 auto;
   }
 
   @media (max-width: 767px) {
@@ -245,6 +247,10 @@
   @media (max-width: 1023px) {
     max-width: 265px;
   }
+
+  @media (max-width: 767px) {
+    max-width: 100%;
+  }
 }
 
 .form__checkbox {
@@ -263,6 +269,11 @@
   box-sizing: border-box;
   z-index: 1;
   cursor: pointer;
+
+  @media (max-width: 1023px) {
+    top: 12px;
+    left: -2px;
+  }
 }
 
 .form__checkbox label {

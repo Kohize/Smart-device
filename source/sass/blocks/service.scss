@@ -7,7 +7,11 @@
   }
 
   @media (max-width: 1023px) {
-    padding: 50px 0 85px 0;
+    padding: 53px 0 75px 0;
+  }
+
+  @media (max-width: 767px) {
+    padding: 50px 25px 85px 25px;
   }
 
   h2 {
@@ -28,6 +32,7 @@
 
     @media (max-width: 767px) {
       display: none;
+      max-width: 100%;
     }
   }
 
@@ -45,7 +50,7 @@
 
     @media (max-width: 767px) {
       display: block;
-      max-width: 270px;
+      max-width: 100%;
       font-size: 28px;
       line-height: 140%;
       margin: 0 auto 25px;
@@ -66,7 +71,7 @@
   }
 
   @media (max-width: 767px) {
-    max-width: 270px;
+    max-width: 100%;
   }
 }
 
@@ -90,7 +95,7 @@
   }
 
   @media (max-width: 767px) {
-    max-width: 270px;
+    max-width: 100%;
   }
 
   h3 {

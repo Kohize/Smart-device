@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Описание проекта">
   <title>SmartDevice</title>
-  <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="../fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="../fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="../fonts/PTMono-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -51,8 +51,8 @@
         <div class="promo__wrapper">
           <h1>Печатные платы</h1>
           <p>производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
-          <a href="#form" class="promo__button" type="button">Получить бесплатную консультацию</a>
-          <a href="#form" class="promo__button promo__button--alt" type="button">бесплатная консультация</a>
+          <a href="#form" class="promo__button">Получить бесплатную консультацию</a>
+          <a href="#form" class="promo__button promo__button--alt">бесплатная консультация</a>
         </div>
       </section>
       <section class="benefits">
@@ -93,8 +93,11 @@
         </div>
       </section>
       <section class="about">
-        <img src="img/year-2022.png" class="about__image" width="150" height="320" srcset="img/year-2022@2x.png 2x"
-          alt="2022">
+        <picture>
+          <source type="image/webp" srcset="img/year-2022.webp 1x, img/year-2022@2x.webp 2x">
+          <img src="img/year-2022.png" class="about__image" width="150" height="320" srcset="img/year-2022@2x.png 2x"
+            alt="2022">
+        </picture>
         <div class="about__content">
           <h2 class="about__title">О компании</h2>
           <p>Мы&nbsp;поставляем электронные комплектующие, производим печатные платы
@@ -162,7 +165,9 @@
       <section class="form" id="form">
         <div class="form__wrapper">
           <picture>
-            <img src="img/form-paperplane.png" width="510" height="285" alt="Бумажный самолет" class="form__paperplane">
+            <source type="image/webp" srcset="img/form-paperplane.webp 1x, img/form-paperplane@2x.webp 2x">
+            <img src="img/form-paperplane.png" width="510" height="285" alt="Бумажный самолет"
+              srcset="img/form-paperplane@2x.png 2x" class="form__paperplane">
           </picture>
           <div class="form__content">
             <h3>Остались вопросы? Задайте их нам!</h3>
@@ -231,7 +236,7 @@
             </li>
           </ul>
         </section>
-        <div class="footer-accordion" data-accordion="parent" data-destroy="(max-width: 767px)" data-single>
+        <div class="sections-accordion" data-accordion="parent" data-destroy="(max-width: 767px)" data-single>
           <section class="sections" data-accordion="element">
             <button class="sections__button" type="button" data-accordion="button">Разделы сайта</button>
             <h2 class="sections__title">Разделы сайта</h2>
@@ -302,25 +307,25 @@
           <form action="https://echo.htmlacademy.ru/" method="post">
             <div class="modal__input modal__input--name" data-validate-type="text" data-required
               data-message-base="Поле обязательно к заполнению">
-              <label for="name"></label>
-              <input type="text" id="name" name="name" placeholder="Имя" required data-focus>
+              <label for="username"></label>
+              <input type="text" id="username" name="name" placeholder="Имя" required data-focus>
             </div>
-            <div class="modal__input modal_input--phone" data-validate-type="phone" data-required
+            <div class="modal__input modal__input--phone" data-validate-type="phone" data-required
               data-message-base="Поле обязательно к заполнению">
-              <label for="phone"></label>
-              <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+              <label for="userphone"></label>
+              <input type="tel" id="userphone" name="phone" placeholder="Телефон" required>
             </div>
             <div class="modal__input modal__input--question">
-              <label for="question"></label>
-              <textarea name="question" id="question" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+              <label for="userquestion"></label>
+              <textarea name="question" id="userquestion" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
             </div>
             <div class="modal__button">
               <button type="submit">Отправить</button>
             </div>
             <div class="modal__checkbox" data-validate-type="checkbox" data-required
               data-message-base="Поле обязательно к заполнению">
-              <input type="checkbox" id="data" required>
-              <label for="data">Я согласен на обработку персональных данных</label>
+              <input type="checkbox" id="userdata" required>
+              <label for="userdata">Я согласен на обработку персональных данных</label>
               <span class="modal__checkbox-mark"></span>
             </div>
           </form>

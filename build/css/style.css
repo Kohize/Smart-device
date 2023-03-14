@@ -1599,7 +1599,7 @@ button,
 
 .socials__list {
   list-style-type: none;
-  padding: 0 0 0 9px;
+  padding: 0 0 0 15px;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1633,15 +1633,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 55px 350px;
+  padding: 51px 350px;
   margin: 0 auto;
   width: 1920px;
-}
-
-.footer-accordion {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .sections {
@@ -1706,6 +1700,12 @@ button,
 
 .sections .is-active {
   padding: 0 0 25px 0;
+}
+
+.sections-accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .location {
@@ -1796,8 +1796,9 @@ button,
 }
 
 .promo__wrapper {
-  width: 970px;
+  max-width: 970px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .promo__wrapper h1 {
@@ -1920,8 +1921,8 @@ button,
   margin: 0 0 20px 0;
 }
 
-.benefits__item:hover .benefits__title,
-.benefits__item:hover .benefits__description,
+.benefits__item:hover h3,
+.benefits__item:hover p,
 .benefits__item:hover .benefits__icon {
   color: #F2F5F7;
   fill: #F2F5F6;
@@ -1936,9 +1937,13 @@ button,
   margin: 0 auto 94px;
 }
 
-.about__image {
+.about picture {
   margin: 0 100px 0 0;
+}
+
+.about img {
   max-height: 320px;
+  max-width: 150px;
 }
 
 .about__content {
@@ -2105,6 +2110,9 @@ button,
   background-color: #00B3FF;
   position: relative;
   height: 840px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .form::before {
@@ -2133,7 +2141,7 @@ button,
   -webkit-column-gap: 118px;
   -moz-column-gap: 118px;
   column-gap: 118px;
-  padding: 165px 0 417px 0;
+  padding: 0 0 80px 0;
 }
 
 .form__wrapper img {
@@ -2480,17 +2488,21 @@ button,
 
 @media (max-width: 1400px) {
   .form__wrapper {
-    padding: 165px 10px 417px 15px;
+    padding: 0 25px;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
+  .container {
+    padding: 0 24px;
+  }
+
   .header {
     min-height: 100px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 0 70px 0 50px;
+    padding: 0 65px 0 50px;
   }
 
   .header__contact {
@@ -2498,7 +2510,7 @@ button,
   }
 
   .header__contact-wrapper--email {
-    margin: 0 20px 0 0;
+    margin: 0 25px 0 0;
   }
 
   .header__contact-link {
@@ -2507,12 +2519,6 @@ button,
 
   .header__modal-open {
     display: none;
-  }
-}
-
-@media (max-width: 1023px) {
-  .container {
-    padding: 0 24px;
   }
 
   .socials {
@@ -2534,6 +2540,10 @@ button,
     margin: 0;
   }
 
+  .socials__list {
+    padding: 0 0 8px 15px;
+  }
+
   .footer__wrapper {
     height: 465px;
     padding: 55px 50px 65px 50px;
@@ -2544,22 +2554,22 @@ button,
     justify-content: flex-start;
   }
 
-  .footer-accordion {
-    width: 100%;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
-
   .sections {
     min-width: auto;
-    margin: 0 160px 0 0;
   }
 
   .sections__list {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     height: auto;
+  }
+
+  .sections-accordion {
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-right: 13px;
   }
 
   .promo {
@@ -2569,7 +2579,6 @@ button,
 
   .promo__wrapper {
     width: 670px;
-    padding: 0 50px;
   }
 
   .promo__wrapper h1 {
@@ -2632,7 +2641,7 @@ button,
     margin: 0 auto 76px;
   }
 
-  .about__image {
+  .about picture {
     margin: 0 29px 0 0;
   }
 
@@ -2649,7 +2658,7 @@ button,
   }
 
   .service {
-    padding: 50px 0 85px 0;
+    padding: 53px 0 75px 0;
   }
 
   .service h2 {
@@ -2713,7 +2722,7 @@ button,
   .form__content {
     min-width: 670px;
     min-height: auto;
-    padding: 0 50px;
+    margin: 0 auto;
   }
 
   .form__content h3 {
@@ -2756,6 +2765,11 @@ button,
     max-width: 265px;
   }
 
+  .form__checkbox input {
+    top: 12px;
+    left: -2px;
+  }
+
   .form__checkbox label {
     padding: 8px 0 0 25px;
   }
@@ -2786,12 +2800,27 @@ button,
 
   .header {
     min-height: 70px;
-    padding: 0 35px 0 26px;
+    padding: 0 45px 0 26px;
   }
 
   .header__logo-link {
     height: 35px;
     width: 35px;
+  }
+
+  .header__contacts {
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+    padding: 5px 0 0 0;
+  }
+
+  .header__contact-wrapper--email {
+    margin: 0;
+  }
+
+  .header__contact-icon {
+    margin: 0;
   }
 
   .socials {
@@ -2810,6 +2839,10 @@ button,
     margin: 0 0 20px 0;
   }
 
+  .socials__list {
+    padding: 0 0 0 8px;
+  }
+
   .footer__wrapper {
     height: 475px;
     width: 100%;
@@ -2819,20 +2852,8 @@ button,
     justify-content: center;
   }
 
-  .footer-accordion {
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-  }
-
   .sections {
     padding: 0;
-    margin: 0;
   }
 
   .sections__title {
@@ -2872,7 +2893,7 @@ button,
     height: 1px;
     width: 15px;
     top: 27px;
-    right: 30px;
+    right: 26px;
     background: #C4C4C4;
   }
 
@@ -2882,11 +2903,23 @@ button,
     height: 1px;
     width: 15px;
     top: 27px;
-    right: 30px;
+    right: 26px;
     background: #C4C4C4;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
+  }
+
+  .sections-accordion {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding: 0;
   }
 
   .location {
@@ -2962,9 +2995,9 @@ button,
 
   .promo__wrapper {
     min-width: 270px;
-    width: 100%;
     margin: 0 auto;
     padding: 0 25px;
+    width: 100%;
   }
 
   .promo__wrapper h1 {
@@ -2990,6 +3023,7 @@ button,
     font-size: 14px;
     line-height: 16px;
     margin: 0;
+    width: 100%;
   }
 
   .benefits {
@@ -3017,7 +3051,7 @@ button,
   }
 
   .benefits__item::before {
-    height: 324px;
+    height: 339px;
   }
 
   .benefits__item h3 {
@@ -3040,7 +3074,11 @@ button,
     padding: 0 25px;
   }
 
-  .about__image {
+  .about picture {
+    display: none;
+  }
+
+  .about img {
     display: none;
   }
 
@@ -3072,24 +3110,29 @@ button,
     height: 35px;
   }
 
+  .service {
+    padding: 50px 25px 85px 25px;
+  }
+
   .service h2 {
     display: none;
+    max-width: 100%;
   }
 
   .service p {
     display: block;
-    max-width: 270px;
+    max-width: 100%;
     font-size: 28px;
     line-height: 140%;
     margin: 0 auto 25px;
   }
 
   .service__wrapper {
-    max-width: 270px;
+    max-width: 100%;
   }
 
   .service__item {
-    max-width: 270px;
+    max-width: 100%;
   }
 
   .service__item h3 {
@@ -3122,6 +3165,7 @@ button,
   .form__wrapper {
     min-width: 270px;
     min-height: 750px;
+    padding: 50px 0 85px 0;
   }
 
   .form__content {
@@ -3184,6 +3228,10 @@ button,
 
   .form__button {
     margin: 0 0 16px 0;
+  }
+
+  .form__button button {
+    max-width: 100%;
   }
 
   .form__checkbox label {

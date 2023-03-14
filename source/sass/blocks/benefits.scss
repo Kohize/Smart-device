@@ -76,7 +76,7 @@
     min-height: 340px;
 
     &::before {
-      height: 324px;
+      height: 339px;
     }
   }
 
@@ -138,8 +138,8 @@
   }
 }
 
-.benefits__item:hover .benefits__title,
-.benefits__item:hover .benefits__description,
+.benefits__item:hover h3,
+.benefits__item:hover p,
 .benefits__item:hover .benefits__icon {
   color: #F2F5F7;
   fill: #F2F5F6;

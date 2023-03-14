@@ -16,20 +16,31 @@
   @media (max-width: 767px) {
     padding: 0 25px;
   }
-}
 
-.about__image {
-  margin: 0 100px 0 0;
-  max-height: 320px;
+  picture {
+    margin: 0 100px 0 0;
 
-  @media (max-width: 1023px) {
-    margin: 0 29px 0 0;
+    @media (max-width: 1023px) {
+      margin: 0 29px 0 0;
+    }
+
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
 
-  @media (max-width: 767px) {
-    display: none;
+  img {
+    max-height: 320px;
+    max-width: 150px;
+
+    @media (max-width: 1023px) {}
+
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
 }
+
 
 .about__content {
   padding: 5px 0 20px 0;

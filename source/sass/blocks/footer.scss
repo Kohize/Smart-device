@@ -5,7 +5,7 @@
 .footer__wrapper {
   height: 280px;
   display: flex;
-  padding: 55px 350px;
+  padding: 51px 350px;
   margin: 0 auto;
   width: 1920px;
 
@@ -31,20 +31,5 @@
     width: 100%;
     padding: 0;
     justify-content: center;
-  }
-}
-
-.footer-accordion {
-  display: flex;
-
-  @media (max-width: 1023px) {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  @media (max-width: 767px) {
-    width: 100%;
-    flex-direction: column;
-    justify-content: flex-start;
   }
 }

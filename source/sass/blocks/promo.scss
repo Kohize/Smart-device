@@ -21,19 +21,19 @@
 }
 
 .promo__wrapper {
-  width: 970px;
+  max-width: 970px;
   margin: 0 auto;
+  width: 100%;
 
   @media (max-width: 1023px) {
     width: 670px;
-    padding: 0 50px;
   }
 
   @media (max-width: 767px) {
     min-width: 270px;
-    width: 100%;
     margin: 0 auto;
     padding: 0 25px;
+    width: 100%;
   }
 
   h1 {
@@ -130,5 +130,6 @@
     font-size: 14px;
     line-height: 16px;
     margin: 0;
+    width: 100%;
   }
 }
