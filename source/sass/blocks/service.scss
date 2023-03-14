@@ -125,44 +125,44 @@
 }
 
 .service__item--production {
-  background-image: url("../../img/card-background-1.png");
+  background-image: url("../img/card-background-1.png");
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (max-width: 1023px) {
-    background-image: url("../../img/card-background-1-tablet.png");
+    background-image: url("../img/card-background-1-tablet.png");
   }
 
   @media (max-width: 767px) {
-    background-image: url("../../img/card-background-1-mobile.png");
+    background-image: url("../img/card-background-1-mobile.png");
   }
 }
 
 .service__item--install {
-  background-image: url("../../img/card-background-2.png");
+  background-image: url("../img/card-background-2.png");
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (max-width: 1023px) {
-    background-image: url("../../img/card-background-2-tablet.png");
+    background-image: url("../img/card-background-2-tablet.png");
   }
 
   @media (max-width: 767px) {
-    background-image: url("../../img/card-background-2-mobile.png");
+    background-image: url("../img/card-background-2-mobile.png");
   }
 }
 
 .service__item--parts {
-  background-image: url("../../img/card-background-3.png");
+  background-image: url("../img/card-background-3.png");
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (max-width: 1023px) {
-    background-image: url("../../img/card-background-3-tablet.png");
+    background-image: url("../img/card-background-3-tablet.png");
   }
 
   @media (max-width: 767px) {
-    background-image: url("../../img/card-background-3-mobile.png");
+    background-image: url("../img/card-background-3-mobile.png");
   }
 }
 
