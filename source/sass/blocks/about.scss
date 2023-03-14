@@ -33,8 +33,6 @@
     max-height: 320px;
     max-width: 150px;
 
-    @media (max-width: 1023px) {}
-
     @media (max-width: 767px) {
       display: none;
     }
@@ -50,7 +48,7 @@
   }
 
   h2 {
-    font-family: 'RobotoCondensed', "Arial", sans-serif;
+    font-family: "RobotoCondensed", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -107,9 +105,9 @@
 }
 
 .about__accordion-button {
-  font-family: 'RobotoCondensed', "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
-  border: 1px solid #00B2FF;
+  border: 1px solid #00b2ff;
   border-radius: 3px;
   width: 180px;
   height: 45px;
@@ -119,7 +117,7 @@
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #00B2FF;
+  color: #00b2ff;
   margin: 18px 0 0 0;
   cursor: pointer;
 

@@ -1,6 +1,6 @@
 .promo {
   padding: 315px 0 293px 0;
-  background-image: url('../../img/promo-background.png');
+  background-image: url("../../img/promo-background.png");
   background-repeat: no-repeat;
   background-color: #041827;
   background-size: cover;
@@ -10,12 +10,12 @@
   height: 100%;
 
   @media (max-width: 1023px) {
-    background-image: url('../../img/promo-background-tablet.png');
+    background-image: url("../../img/promo-background-tablet.png");
     padding: 200px 0 221px 0;
   }
 
   @media (max-width: 767px) {
-    background-image: url('../../img/promo-background-mobile.png');
+    background-image: url("../../img/promo-background-mobile.png");
     padding: 200px 0 187px 0;
   }
 }
@@ -37,14 +37,14 @@
   }
 
   h1 {
-    font-family: 'RobotoCondensed', "Arial", sans-serif;
+    font-family: "RobotoCondensed", "Arial", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 80px;
     line-height: 94px;
     letter-spacing: 0.07em;
     text-transform: uppercase;
-    color: #F2F5F7;
+    color: #f2f5f7;
     margin: 0 0 30px 0;
     max-width: 720px;
 
@@ -63,12 +63,12 @@
   }
 
   p {
-    font-family: 'PTMono', "Arial", sans-serif;
+    font-family: "PTMono", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
     line-height: 155%;
-    color: #F2F5F7;
+    color: #f2f5f7;
     max-width: 685px;
     margin: 0 0 63px 0;
 
@@ -91,11 +91,11 @@
 .promo__button {
   width: 410px;
   padding: 15px 25px;
-  background: #00B2FF;
+  background: #00b2ff;
   border: 0;
   cursor: pointer;
   border-radius: 3px;
-  font-family: 'RobotoCondensed', "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -103,7 +103,7 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #F2F5F7;
+  color: #f2f5f7;
 
   &:hover,
   &:active {

@@ -62,7 +62,7 @@
     width: 600px;
     padding: 40px;
 
-    background: #00B3FF;
+    background: #00b3ff;
     border-radius: 3px;
 
     @include vp-767 {
@@ -129,22 +129,22 @@
   margin: 0 auto;
 
   h3 {
-    font-family: 'RobotoCondensed', "Arial", sans-serif;
+    font-family: "RobotoCondensed", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
     line-height: 140.62%;
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 0 0 15px 0;
   }
 
   p {
-    font-family: 'PTMono', "Arial", sans-serif;
+    font-family: "PTMono", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 0 0 40px 0;
   }
 }
@@ -157,14 +157,8 @@
   margin: 0 auto;
 }
 
-.modal__input {
-  &:not(:last-child) {
-    margin: 0 0 20px 0;
-  }
-}
-
 .modal__input input {
-  font-family: 'PTMono', "Arial", sans-serif;
+  font-family: "PTMono", "Arial", sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 22px;
@@ -175,6 +169,11 @@
   border-radius: 3px;
   border: 0;
 
+  &:hover,
+  &:focus {
+    outline: 1px solid #ffffff;
+  }
+
   &::placeholder {
     color: #ffffff;
     padding: 15px 0 15px 15px;
@@ -182,8 +181,12 @@
 }
 
 .modal__input {
+  &:not(:last-child) {
+    margin: 0 0 20px 0;
+  }
+
   textarea {
-    font-family: 'PTMono', "Arial", sans-serif;
+    font-family: "PTMono", "Arial", sans-serif;
     font-style: normal;
     font-size: 16px;
     line-height: 22px;
@@ -194,6 +197,11 @@
     border-radius: 3px;
     border: 0;
 
+    &:hover,
+    &:focus {
+    outline: 1px solid #ffffff;
+  }
+
     &::placeholder {
       color: #ffffff;
       padding: 25px 0 0 15px;
@@ -203,7 +211,7 @@
 
 .modal__button {
   button {
-    font-family: 'RobotoCondensed', "Arial", sans-serif;
+    font-family: "RobotoCondensed", "Arial", sans-serif;
     font-style: normal;
     max-width: 420px;
     width: 100%;
@@ -214,7 +222,7 @@
     text-align: center;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #ffffff;
     border: 0;
     background: #041427;
     border-radius: 3px;
@@ -232,12 +240,12 @@
   position: relative;
 
   label {
-    font-family: 'PTMono', "Arial", sans-serif;
+    font-family: "PTMono", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    color: #FFFFFF;
+    color: #ffffff;
     opacity: 0.8;
     padding: 0 0 0 34px;
   }
@@ -258,20 +266,20 @@
 
 .modal__checkbox-mark {
   position: absolute;
-  content: '';
+  content: "";
   width: 15px;
   height: 15px;
   background-color: transparent;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   border-radius: 2px;
   top: 4px;
   left: 10px;
 }
 
-.modal__checkbox input:checked~.modal__checkbox-mark::before {
+.modal__checkbox input:checked ~ .modal__checkbox-mark::before {
   position: absolute;
-  content: '';
-  background: url(../../img/svg/vector.svg);
+  content: "";
+  background: url("../../img/svg/vector.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 7px;

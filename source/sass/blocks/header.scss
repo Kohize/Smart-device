@@ -104,7 +104,7 @@
   font-family: "PTMono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
-  color: #F2F5F7;
+  color: #f2f5f7;
   font-size: 16px;
   line-height: 18px;
   display: flex;
@@ -112,7 +112,7 @@
 
   &:hover,
   &:focus {
-    color: #00B2FF;
+    color: #00b2ff;
   }
 
   @media (max-width: 1023px) {
@@ -121,23 +121,23 @@
 }
 
 .header__modal-open {
-  font-family: 'RobotoCondensed', "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  border: 1px solid #F2F5F7;
+  border: 1px solid #f2f5f7;
   border-radius: 3px;
   background-color: transparent;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #F2F5F7;
+  color: #f2f5f7;
   padding: 10px 15px;
   cursor: pointer;
 
   &:hover,
   &:focus {
-    background-color: #00B2FF;
+    background-color: #00b2ff;
     color: #041827;
   }
 

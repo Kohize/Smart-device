@@ -15,12 +15,12 @@
   }
 
   h2 {
-    font-family: 'RobotoCondensed', "Arial", sans-serif;
+    font-family: "RobotoCondensed", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
     line-height: 51px;
-    color: #FFFFFF;
+    color: #ffffff;
     max-width: 1220px;
     width: 100%;
     margin: 0 auto 53px;
@@ -38,12 +38,12 @@
 
   p {
     display: none;
-    font-family: 'RobotoCondensed', "Arial", sans-serif;
+    font-family: "RobotoCondensed", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
     line-height: 51px;
-    color: #FFFFFF;
+    color: #ffffff;
     max-width: 1220px;
     width: 100%;
     margin: 0 auto 53px;
@@ -60,10 +60,11 @@
 
 .service__wrapper {
   display: flex;
+  flex-wrap: wrap;
   max-width: 1220px;
   width: 100%;
   margin: 0 auto;
-  column-gap: 7%;
+  column-gap: 85px;
 
   @media (max-width: 1023px) {
     max-width: 670px;
@@ -82,7 +83,7 @@
   position: relative;
 
   &:hover {
-    box-shadow: 0 0 11px rgba(42, 78, 105, .9);
+    box-shadow: 0 0 11px rgba(42, 78, 105, 0.9);
   }
 
   @media (max-width: 1023px) {
@@ -90,7 +91,7 @@
     min-height: 250px;
 
     &:not(:last-child) {
-      margin: 0 0 30px 0
+      margin: 0 0 30px 0;
     }
   }
 
@@ -99,12 +100,12 @@
   }
 
   h3 {
-    font-family: 'RobotoCondensed', "Arial", sans-serif;
+    font-family: "RobotoCondensed", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 0;
     padding: 50px 80px 0 40px;
     max-width: 280px;
@@ -124,44 +125,44 @@
 }
 
 .service__item--production {
-  background-image: url(../../img/card-background-1.png);
+  background-image: url("../../img/card-background-1.png");
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (max-width: 1023px) {
-    background-image: url(../../img/card-background-1-tablet.png);
+    background-image: url("../../img/card-background-1-tablet.png");
   }
 
   @media (max-width: 767px) {
-    background-image: url(../../img/card-background-1-mobile.png);
+    background-image: url("../../img/card-background-1-mobile.png");
   }
 }
 
 .service__item--install {
-  background-image: url(../../img/card-background-2.png);
+  background-image: url("../../img/card-background-2.png");
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (max-width: 1023px) {
-    background-image: url(../../img/card-background-2-tablet.png);
+    background-image: url("../../img/card-background-2-tablet.png");
   }
 
   @media (max-width: 767px) {
-    background-image: url(../../img/card-background-2-mobile.png);
+    background-image: url("../../img/card-background-2-mobile.png");
   }
 }
 
 .service__item--parts {
-  background-image: url(../../img/card-background-3.png);
+  background-image: url("../../img/card-background-3.png");
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (max-width: 1023px) {
-    background-image: url(../../img/card-background-3-tablet.png);
+    background-image: url("../../img/card-background-3-tablet.png");
   }
 
   @media (max-width: 767px) {
-    background-image: url(../../img/card-background-3-mobile.png);
+    background-image: url("../../img/card-background-3-mobile.png");
   }
 }
 
@@ -171,8 +172,8 @@
   right: 0;
   width: 60px;
   height: 60px;
-  background-color: #00B2FF;
-  border-radius: 3px 0px 0px 0px;
+  background-color: #00b2ff;
+  border-radius: 3px;
   border: 0;
   cursor: pointer;
   display: flex;

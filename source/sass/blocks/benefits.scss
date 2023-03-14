@@ -44,19 +44,19 @@
 
 .benefits__item {
   position: relative;
-  border: 1px solid #EBEBEB;
+  border: 1px solid #ebebeb;
   padding: 40px 45px 35px 45px;
   box-sizing: border-box;
 
   &:hover {
-    border: 1px solid #00B2FF;
-    background-color: #00B2FF;
+    border: 1px solid #00b2ff;
+    background-color: #00b2ff;
   }
 
   &::before {
     position: absolute;
     content: "";
-    background: #00B2FF;
+    background: #00b2ff;
     width: 5px;
     height: 300px;
     left: 0;
@@ -81,12 +81,12 @@
   }
 
   h3 {
-    font-family: 'RobotoCondensed', "Arial", sans-serif;
+    font-family: "RobotoCondensed", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 135%;
-    color: #00B2FF;
+    color: #00b2ff;
     margin: 0 0 10px 0;
 
     @media (max-width: 767px) {
@@ -95,7 +95,7 @@
   }
 
   p {
-    font-family: 'PTMono', "Arial", sans-serif;
+    font-family: "PTMono", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -130,7 +130,7 @@
 }
 
 .benefits__icon {
-  fill: #00B2FF;
+  fill: #00b2ff;
   margin: 0 0 20px 0;
 
   @media (max-width: 1023px) {
@@ -141,6 +141,6 @@
 .benefits__item:hover h3,
 .benefits__item:hover p,
 .benefits__item:hover .benefits__icon {
-  color: #F2F5F7;
-  fill: #F2F5F6;
+  color: #f2f5f7;
+  fill: #f2f5f6;
 }

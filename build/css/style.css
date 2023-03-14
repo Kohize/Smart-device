@@ -730,7 +730,7 @@ button,
   position: relative;
   width: 600px;
   padding: 40px;
-  background: #00B3FF;
+  background: #00b3ff;
   border-radius: 3px;
 }
 
@@ -792,7 +792,7 @@ button,
   font-weight: 400;
   font-size: 30px;
   line-height: 140.62%;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0 0 15px 0;
 }
 
@@ -802,7 +802,7 @@ button,
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0 0 40px 0;
 }
 
@@ -819,10 +819,6 @@ button,
   margin: 0 auto;
 }
 
-.modal__input:not(:last-child) {
-  margin: 0 0 20px 0;
-}
-
 .modal__input input {
   font-family: "PTMono", "Arial", sans-serif;
   font-style: normal;
@@ -834,6 +830,11 @@ button,
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   border: 0;
+}
+
+.modal__input input:hover,
+.modal__input input:focus {
+  outline: 1px solid #ffffff;
 }
 
 .modal__input input::-webkit-input-placeholder {
@@ -861,6 +862,10 @@ button,
   padding: 15px 0 15px 15px;
 }
 
+.modal__input:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+
 .modal__input textarea {
   font-family: "PTMono", "Arial", sans-serif;
   font-style: normal;
@@ -872,6 +877,11 @@ button,
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   border: 0;
+}
+
+.modal__input textarea:hover,
+.modal__input textarea:focus {
+  outline: 1px solid #ffffff;
 }
 
 .modal__input textarea::-webkit-input-placeholder {
@@ -911,7 +921,7 @@ button,
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   border: 0;
   background: #041427;
   border-radius: 3px;
@@ -934,7 +944,7 @@ button,
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.8;
   padding: 0 0 0 34px;
 }
@@ -961,7 +971,7 @@ button,
   width: 15px;
   height: 15px;
   background-color: transparent;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   border-radius: 2px;
   top: 4px;
   left: 10px;
@@ -970,7 +980,7 @@ button,
 .modal__checkbox input:checked ~ .modal__checkbox-mark::before {
   position: absolute;
   content: "";
-  background: url(../../img/svg/vector.svg);
+  background: url("../../img/svg/vector.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 7px;
@@ -1552,7 +1562,7 @@ button,
   font-family: "PTMono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
-  color: #F2F5F7;
+  color: #f2f5f7;
   font-size: 16px;
   line-height: 18px;
   display: -webkit-box;
@@ -1563,7 +1573,7 @@ button,
 
 .header__contact-link:hover,
 .header__contact-link:focus {
-  color: #00B2FF;
+  color: #00b2ff;
 }
 
 .header__modal-open {
@@ -1572,19 +1582,19 @@ button,
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  border: 1px solid #F2F5F7;
+  border: 1px solid #f2f5f7;
   border-radius: 3px;
   background-color: transparent;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #F2F5F7;
+  color: #f2f5f7;
   padding: 10px 15px;
   cursor: pointer;
 }
 
 .header__modal-open:hover,
 .header__modal-open:focus {
-  background-color: #00B2FF;
+  background-color: #00b2ff;
   color: #041827;
 }
 
@@ -1617,11 +1627,11 @@ button,
 }
 
 .socials__icon {
-  fill: #F8FDFF;
+  fill: #f8fdff;
 }
 
 .socials__icon:hover {
-  fill: #00B2FF;
+  fill: #00b2ff;
 }
 
 .footer {
@@ -1695,7 +1705,7 @@ button,
 }
 
 .sections__link:active {
-  color: #00B3FF;
+  color: #00b3ff;
 }
 
 .sections .is-active {
@@ -1758,7 +1768,7 @@ button,
 }
 
 .location__tel:active {
-  color: #00B3FF;
+  color: #00b3ff;
 }
 
 [data-accordion=element].is-active > [data-accordion=content] {
@@ -1809,7 +1819,7 @@ button,
   line-height: 94px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: #F2F5F7;
+  color: #f2f5f7;
   margin: 0 0 30px 0;
   max-width: 720px;
 }
@@ -1820,7 +1830,7 @@ button,
   font-weight: 400;
   font-size: 22px;
   line-height: 155%;
-  color: #F2F5F7;
+  color: #f2f5f7;
   max-width: 685px;
   margin: 0 0 63px 0;
 }
@@ -1828,7 +1838,7 @@ button,
 .promo__button {
   width: 410px;
   padding: 15px 25px;
-  background: #00B2FF;
+  background: #00b2ff;
   border: 0;
   cursor: pointer;
   border-radius: 3px;
@@ -1840,7 +1850,7 @@ button,
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #F2F5F7;
+  color: #f2f5f7;
 }
 
 .promo__button:hover,
@@ -1875,21 +1885,21 @@ button,
 
 .benefits__item {
   position: relative;
-  border: 1px solid #EBEBEB;
+  border: 1px solid #ebebeb;
   padding: 40px 45px 35px 45px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 .benefits__item:hover {
-  border: 1px solid #00B2FF;
-  background-color: #00B2FF;
+  border: 1px solid #00b2ff;
+  background-color: #00b2ff;
 }
 
 .benefits__item::before {
   position: absolute;
   content: "";
-  background: #00B2FF;
+  background: #00b2ff;
   width: 5px;
   height: 300px;
   left: 0;
@@ -1902,7 +1912,7 @@ button,
   font-weight: 400;
   font-size: 24px;
   line-height: 135%;
-  color: #00B2FF;
+  color: #00b2ff;
   margin: 0 0 10px 0;
 }
 
@@ -1917,15 +1927,15 @@ button,
 }
 
 .benefits__icon {
-  fill: #00B2FF;
+  fill: #00b2ff;
   margin: 0 0 20px 0;
 }
 
 .benefits__item:hover h3,
 .benefits__item:hover p,
 .benefits__item:hover .benefits__icon {
-  color: #F2F5F7;
-  fill: #F2F5F6;
+  color: #f2f5f7;
+  fill: #f2f5f6;
 }
 
 .about {
@@ -1976,7 +1986,7 @@ button,
 .about__accordion-button {
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
-  border: 1px solid #00B2FF;
+  border: 1px solid #00b2ff;
   border-radius: 3px;
   width: 180px;
   height: 45px;
@@ -1986,7 +1996,7 @@ button,
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #00B2FF;
+  color: #00b2ff;
   margin: 18px 0 0 0;
   cursor: pointer;
 }
@@ -2007,7 +2017,7 @@ button,
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
-  color: #FFFFFF;
+  color: #ffffff;
   max-width: 1220px;
   width: 100%;
   margin: 0 auto 53px;
@@ -2020,7 +2030,7 @@ button,
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
-  color: #FFFFFF;
+  color: #ffffff;
   max-width: 1220px;
   width: 100%;
   margin: 0 auto 53px;
@@ -2030,12 +2040,14 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   max-width: 1220px;
   width: 100%;
   margin: 0 auto;
-  -webkit-column-gap: 7%;
-  -moz-column-gap: 7%;
-  column-gap: 7%;
+  -webkit-column-gap: 85px;
+  -moz-column-gap: 85px;
+  column-gap: 85px;
 }
 
 .service__item {
@@ -2056,7 +2068,7 @@ button,
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0;
   padding: 50px 80px 0 40px;
   max-width: 280px;
@@ -2064,19 +2076,19 @@ button,
 }
 
 .service__item--production {
-  background-image: url(../../img/card-background-1.png);
+  background-image: url("../../img/card-background-1.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .service__item--install {
-  background-image: url(../../img/card-background-2.png);
+  background-image: url("../../img/card-background-2.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .service__item--parts {
-  background-image: url(../../img/card-background-3.png);
+  background-image: url("../../img/card-background-3.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2087,8 +2099,8 @@ button,
   right: 0;
   width: 60px;
   height: 60px;
-  background-color: #00B2FF;
-  border-radius: 3px 0px 0px 0px;
+  background-color: #00b2ff;
+  border-radius: 3px;
   border: 0;
   cursor: pointer;
   display: -webkit-box;
@@ -2107,7 +2119,7 @@ button,
 }
 
 .form {
-  background-color: #00B3FF;
+  background-color: #00b3ff;
   position: relative;
   height: 840px;
   display: -webkit-box;
@@ -2118,7 +2130,7 @@ button,
 .form::before {
   content: "";
   position: absolute;
-  background-image: url(../../img/polygon.png);
+  background-image: url("../../img/polygon.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 1265px;
@@ -2162,7 +2174,7 @@ button,
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0 0 15px 0;
 }
 
@@ -2199,6 +2211,11 @@ button,
   font-size: 16px;
   line-height: 22px;
   margin: 0 0 20px 0;
+}
+
+.form__input input:hover,
+.form__input input:focus {
+  outline: 1px solid #ccc;
 }
 
 .form__input input::-webkit-input-placeholder {
@@ -2248,6 +2265,11 @@ button,
   scrollbar-width: none;
 }
 
+.form__input--question textarea:hover,
+.form__input--question textarea:focus {
+  outline: 1px solid #ccc;
+}
+
 .form__input--question textarea::-webkit-input-placeholder {
   padding: 20px 0 90px 15px;
   color: #ffffff;
@@ -2282,9 +2304,8 @@ button,
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   min-width: 265px;
-  width: 100%;
   height: 45px;
   background: #041427;
   border-radius: 3px;
@@ -2326,7 +2347,7 @@ button,
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.8;
   padding: 15px 0 0 38px;
   cursor: pointer;
@@ -2338,7 +2359,7 @@ button,
   width: 15px;
   height: 15px;
   background-color: transparent;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   border-radius: 2px;
   top: 23px;
   left: 12px;
@@ -2346,8 +2367,8 @@ button,
 
 .form__checkbox input:checked ~ .form__checkbox-mark::before {
   position: absolute;
-  content: "";
-  background: url(../../img/svg/vector.svg);
+  content: "''";
+  background: url("../../img/svg/vector.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 7px;
@@ -2687,15 +2708,15 @@ button,
   }
 
   .service__item--production {
-    background-image: url(../../img/card-background-1-tablet.png);
+    background-image: url("../../img/card-background-1-tablet.png");
   }
 
   .service__item--install {
-    background-image: url(../../img/card-background-2-tablet.png);
+    background-image: url("../../img/card-background-2-tablet.png");
   }
 
   .service__item--parts {
-    background-image: url(../../img/card-background-3-tablet.png);
+    background-image: url("../../img/card-background-3-tablet.png");
   }
 
   .form {
@@ -2894,7 +2915,7 @@ button,
     width: 15px;
     top: 27px;
     right: 26px;
-    background: #C4C4C4;
+    background: #c4c4c4;
   }
 
   .sections__button::after {
@@ -2904,7 +2925,7 @@ button,
     width: 15px;
     top: 27px;
     right: 26px;
-    background: #C4C4C4;
+    background: #c4c4c4;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -2968,7 +2989,7 @@ button,
     width: 15px;
     top: 27px;
     right: 30px;
-    background: #C4C4C4;
+    background: #c4c4c4;
   }
 
   .location__button::after {
@@ -2978,7 +2999,7 @@ button,
     width: 15px;
     top: 27px;
     right: 30px;
-    background: #C4C4C4;
+    background: #c4c4c4;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -3142,15 +3163,15 @@ button,
   }
 
   .service__item--production {
-    background-image: url(../../img/card-background-1-mobile.png);
+    background-image: url("../../img/card-background-1-mobile.png");
   }
 
   .service__item--install {
-    background-image: url(../../img/card-background-2-mobile.png);
+    background-image: url("../../img/card-background-2-mobile.png");
   }
 
   .service__item--parts {
-    background-image: url(../../img/card-background-3-mobile.png);
+    background-image: url("../../img/card-background-3-mobile.png");
   }
 
   .service__arrow {

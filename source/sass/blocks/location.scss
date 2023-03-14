@@ -7,7 +7,7 @@
 }
 
 .location__title {
-  font-family: 'RobotoCondensed', "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -24,7 +24,7 @@
 
 .location__wrapper {
   @media (max-width: 767px) {
-    padding: 0 0 0 25px
+    padding: 0 0 0 25px;
   }
 }
 
@@ -36,7 +36,7 @@
 
 .location__address {
   margin: 0 0 7px 0;
-  font-family: 'PTMono', "Arial", sans-serif;
+  font-family: "PTMono", "Arial", sans-serif;
   font-style: normal;
   color: rgba(255, 255, 255, 0.7);
   line-height: 135%;
@@ -56,7 +56,7 @@
 
 .location__tel {
   margin: 0;
-  font-family: 'PTMono', "Arial", sans-serif;
+  font-family: "PTMono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -68,7 +68,7 @@
   }
 
   &:active {
-    color: #00B3FF;
+    color: #00b3ff;
   }
 
   @media (max-width: 767px) {
@@ -83,7 +83,7 @@
     background: transparent;
     padding: 20px 25px;
     color: #ffffff;
-    font-family: 'RobotoCondensed', "Arial", sans-serif;
+    font-family: "RobotoCondensed", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -101,7 +101,7 @@
       width: 15px;
       top: 27px;
       right: 30px;
-      background: #C4C4C4;
+      background: #c4c4c4;
     }
 
     &::after {
@@ -111,7 +111,7 @@
       width: 15px;
       top: 27px;
       right: 30px;
-      background: #C4C4C4;
+      background: #c4c4c4;
       transform: rotate(90deg);
     }
   }
