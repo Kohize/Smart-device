@@ -279,7 +279,7 @@
 
 .modal__checkbox input:checked ~ .modal__checkbox-mark::before {
   position: absolute;
-  content: '';
+  content: "";
   background: url("../../img/svg/vector.svg");
   background-repeat: no-repeat;
   background-size: cover;
