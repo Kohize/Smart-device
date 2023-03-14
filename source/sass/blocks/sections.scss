@@ -135,6 +135,7 @@
 
 .sections-accordion {
   display: flex;
+  flex-wrap: wrap;
 
   @media (max-width: 1023px) {
     width: 100%;

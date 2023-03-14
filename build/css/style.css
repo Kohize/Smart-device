@@ -947,6 +947,7 @@ button,
   color: #ffffff;
   opacity: 0.8;
   padding: 0 0 0 34px;
+  cursor: pointer;
 }
 
 .modal__checkbox input {
@@ -987,6 +988,14 @@ button,
   height: 4px;
   top: 4px;
   right: 3px;
+}
+
+.modal__checkbox label:hover ~ .modal__checkbox-mark {
+  outline: 1px solid #ffffff;
+}
+
+.modal__checkbox input:hover ~ .modal__checkbox-mark {
+  outline: 1px solid #ffffff;
 }
 
 .custom-input,
@@ -1535,7 +1544,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 160px 0 0;
+  margin: 0 163px 0 0;
 }
 
 .header__contact-wrapper {
@@ -1639,7 +1648,7 @@ button,
 }
 
 .footer__wrapper {
-  height: 280px;
+  min-height: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1716,6 +1725,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .location {
@@ -1864,7 +1875,7 @@ button,
 
 .benefits {
   padding: 0 25px;
-  margin: 0 0 147px 0;
+  margin: 0 0 127px 0;
 }
 
 .benefits__wrapper {
@@ -1874,21 +1885,20 @@ button,
   display: grid;
   -ms-grid-columns: 50% 50%;
   grid-template-columns: 50% 50%;
-  -ms-grid-rows: 300px 300px;
-  grid-template-rows: 300px 300px;
   margin: 0 auto;
   -webkit-column-gap: 1.4%;
   -moz-column-gap: 1.4%;
   column-gap: 1.4%;
-  row-gap: 5%;
+  row-gap: 3%;
 }
 
 .benefits__item {
   position: relative;
   border: 1px solid #ebebeb;
-  padding: 40px 45px 35px 45px;
+  padding: 40px 45px 25px 45px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  min-height: 310px;
 }
 
 .benefits__item:hover {
@@ -1901,7 +1911,7 @@ button,
   content: "";
   background: #00b2ff;
   width: 5px;
-  height: 300px;
+  height: 100%;
   left: 0;
   top: 0;
 }
@@ -2215,7 +2225,7 @@ button,
 
 .form__input input:hover,
 .form__input input:focus {
-  outline: 1px solid #ccc;
+  outline: 1px solid #cccccc;
 }
 
 .form__input input::-webkit-input-placeholder {
@@ -2267,7 +2277,7 @@ button,
 
 .form__input--question textarea:hover,
 .form__input--question textarea:focus {
-  outline: 1px solid #ccc;
+  outline: 1px solid #cccccc;
 }
 
 .form__input--question textarea::-webkit-input-placeholder {
@@ -2367,7 +2377,7 @@ button,
 
 .form__checkbox input:checked ~ .form__checkbox-mark::before {
   position: absolute;
-  content: "''";
+  content: "";
   background: url("../../img/svg/vector.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -2375,6 +2385,14 @@ button,
   height: 4px;
   top: 4px;
   right: 3px;
+}
+
+.form__checkbox label:hover ~ .form__checkbox-mark {
+  outline: 1px solid #ffffff;
+}
+
+.form__checkbox input:hover ~ .form__checkbox-mark {
+  outline: 1px solid #ffffff;
 }
 
 /* @mixin hover-focus {
@@ -2513,6 +2531,14 @@ button,
   }
 }
 
+@media (max-width: 1340px) {
+  .service__wrapper {
+    max-width: 790px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
 @media (max-width: 1023px) {
   .container {
     padding: 0 24px;
@@ -2566,7 +2592,7 @@ button,
   }
 
   .footer__wrapper {
-    height: 465px;
+    min-height: 465px;
     padding: 55px 50px 65px 50px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -2638,15 +2664,11 @@ button,
   }
 
   .benefits__item {
-    padding: 37px 35px 35px 45px;
+    padding: 37px 55px 35px 45px;
   }
 
   .benefits__item::before {
     height: 360px;
-  }
-
-  .benefits__item p {
-    max-width: 235px;
   }
 
   .benefits__item--small h3 {
@@ -2865,7 +2887,7 @@ button,
   }
 
   .footer__wrapper {
-    height: 475px;
+    min-height: 475px;
     width: 100%;
     padding: 0;
     -webkit-box-pack: center;
@@ -2988,7 +3010,7 @@ button,
     height: 1px;
     width: 15px;
     top: 27px;
-    right: 30px;
+    right: 26px;
     background: #c4c4c4;
   }
 
@@ -2998,7 +3020,7 @@ button,
     height: 1px;
     width: 15px;
     top: 27px;
-    right: 30px;
+    right: 26px;
     background: #c4c4c4;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -3072,7 +3094,7 @@ button,
   }
 
   .benefits__item::before {
-    height: 339px;
+    height: 324px;
   }
 
   .benefits__item h3 {
@@ -3253,6 +3275,7 @@ button,
 
   .form__button button {
     max-width: 100%;
+    width: 100%;
   }
 
   .form__checkbox label {
@@ -3261,6 +3284,7 @@ button,
 
   .form__checkbox-mark {
     left: 4px;
+    top: 8px;
   }
 }
 

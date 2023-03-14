@@ -66,6 +66,11 @@
   margin: 0 auto;
   column-gap: 85px;
 
+  @media (max-width: 1340px) {
+    max-width: 790px;
+    flex-wrap: wrap;
+  }
+
   @media (max-width: 1023px) {
     max-width: 670px;
     flex-wrap: wrap;
