@@ -9,16 +9,29 @@
   bottom: 119px;
   height: 100%;
 
+  @media (min-width: 1024px) and (min-resolution: 2dppx) {
+    background-image: url("../img/promo-background@2x.webp");
+  }
+
   @media (max-width: 1023px) {
     background-image: url("../img/promo-background-tablet.webp");
     padding: 200px 0 221px 0;
+  }
+
+  @media (min-width: 768px) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/promo-background-tablet@2x.webp");
   }
 
   @media (max-width: 767px) {
     background-image: url("../img/promo-background-mobile.webp");
     padding: 200px 0 187px 0;
   }
+
+  @media (min-width: 320px) and (min-resolution: 1.3dppx) {
+    background-image: url("../img/promo-background-mobile@2x.webp");
+  }
 }
+
 
 .promo__wrapper {
   max-width: 970px;

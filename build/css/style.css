@@ -2436,6 +2436,24 @@ button,
   }
 */
 
+@media (min-width: 320px) and (-webkit-min-device-pixel-ratio: 1.3), (min-width: 320px) and (-o-min-device-pixel-ratio: 13/10), (min-width: 320px) and (min-resolution: 1.3dppx) {
+  .promo {
+    background-image: url("../img/promo-background-mobile@2x.webp");
+  }
+
+  .service__item--production {
+    background-image: url("../img/card-background-1-mobile@2x.webp");
+  }
+
+  .service__item--install {
+    background-image: url("../img/card-background-2-mobile@2x.webp");
+  }
+
+  .service__item--parts {
+    background-image: url("../img/card-background-3-mobile@2x.webp");
+  }
+}
+
 @media (min-width: 768px) {
   .sections__button {
     display: none;
@@ -2446,10 +2464,46 @@ button,
   }
 }
 
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .promo {
+    background-image: url("../img/promo-background-tablet@2x.webp");
+  }
+
+  .service__item--production {
+    background-image: url("../img/card-background-1-tablet@2x.webp");
+  }
+
+  .service__item--install {
+    background-image: url("../img/card-background-2-tablet@2x.webp");
+  }
+
+  .service__item--parts {
+    background-image: url("../img/card-background-3-tablet@2x.webp");
+  }
+}
+
 @media (min-width: 1024px) {
   .header-wrapper {
     top: 0;
     position: sticky;
+  }
+}
+
+@media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1024px) and (min-resolution: 2dppx) {
+  .promo {
+    background-image: url("../img/promo-background@2x.webp");
+  }
+
+  .service__item--production {
+    background-image: url("../img/card-background-1@2x.webp");
+  }
+
+  .service__item--install {
+    background-image: url("../img/card-background-1@2x.webp");
+  }
+
+  .service__item--parts {
+    background-image: url("../img/card-background-1@2x.webp");
   }
 }
 

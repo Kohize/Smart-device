@@ -2,7 +2,7 @@ const aboutButton = document.querySelector('.about__accordion-button');
 const mobileSpan = document.querySelector('.is-closed');
 
 const buttonToggle = () => {
-  if (aboutButton.textContent === 'Подробнее') {
+  if (mobileSpan && aboutButton && aboutButton.textContent === 'Подробнее') {
     aboutButton.textContent = 'Свернуть';
     mobileSpan.classList.remove('is-closed');
     mobileSpan.classList.add('is-opened');
