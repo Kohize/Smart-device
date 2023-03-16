@@ -18,7 +18,7 @@
     padding: 200px 0 221px 0;
   }
 
-  @media (min-width: 768px) and (min-resolution: 1.5dppx) {
+  @media (min-width: 768px) and (max-width: 1023px) and (min-resolution: 2dppx) {
     background-image: url("../img/promo-background-tablet@2x.webp");
   }
 
@@ -27,7 +27,7 @@
     padding: 200px 0 187px 0;
   }
 
-  @media (min-width: 320px) and (min-resolution: 1.3dppx) {
+  @media (min-width: 320px) and (max-width: 767px) and (min-resolution: 2dppx) {
     background-image: url("../img/promo-background-mobile@2x.webp");
   }
 }
