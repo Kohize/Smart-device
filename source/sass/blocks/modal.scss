@@ -58,8 +58,8 @@
 
   &__content {
     position: relative;
-
-    width: 600px;
+    width: 500px;
+    max-height: 610px;
     padding: 40px;
 
     background: #00b3ff;
@@ -126,7 +126,7 @@
 .modal__heading {
   max-width: 420px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 
   h3 {
     font-family: "RobotoCondensed", "Arial", sans-serif;
@@ -135,7 +135,7 @@
     font-size: 30px;
     line-height: 140.62%;
     color: #ffffff;
-    margin: 0 0 15px 0;
+    margin: 0;
   }
 
   p {
@@ -145,7 +145,7 @@
     font-size: 16px;
     line-height: 22px;
     color: #ffffff;
-    margin: 0 0 40px 0;
+    margin: 0 0 0 0;
   }
 }
 
@@ -168,6 +168,7 @@
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   border: 0;
+  padding: 15px 0 15px 15px;
 
   &:hover,
   &:focus {
@@ -176,7 +177,6 @@
 
   &::placeholder {
     color: #ffffff;
-    padding: 15px 0 15px 15px;
   }
 }
 
@@ -196,6 +196,7 @@
     background: rgba(4, 20, 39, 0.15);
     border-radius: 3px;
     border: 0;
+    padding: 25px 0 0 15px;
 
     &:hover,
     &:focus {
@@ -204,12 +205,13 @@
 
     &::placeholder {
       color: #ffffff;
-      padding: 25px 0 0 15px;
     }
   }
 }
 
 .modal__button {
+  margin: 0 0 15px 0;
+
   button {
     font-family: "RobotoCondensed", "Arial", sans-serif;
     font-style: normal;
@@ -226,7 +228,6 @@
     border: 0;
     background: #041427;
     border-radius: 3px;
-    margin: 0 0 20px 0;
     cursor: pointer;
 
     &:hover {

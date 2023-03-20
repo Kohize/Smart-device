@@ -1,7 +1,7 @@
 .sections {
   min-width: 422px;
   padding: 10px 0 0 0;
-  margin: 0 78px 0 0;
+  margin: 0 60px 0 0;
 
   @media (max-width: $vp-1440) {
     margin: 0;
@@ -36,14 +36,17 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: flex;
+  display: grid;
+  grid-template-columns: 220px 220px;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 150px;
+  column-gap: 7%;
 
   @media (max-width: 1023px) {
+    display: flex;
     flex-wrap: nowrap;
     height: auto;
+    column-gap: 0;
   }
 
   @media (max-width: 767px) {
@@ -53,6 +56,30 @@
 
 .sections__item {
   max-width: 220px;
+
+  &:nth-child(-n+4) {
+    grid-column: 1/2;
+  }
+
+  &:nth-child(n+5) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  &:nth-child(n+6) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  &:nth-child(n+7) {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  &:nth-child(n+8) {
+    grid-column: auto;
+    grid-row: auto;
+  }
 
   &:not(:last-child) {
     margin: 0 0 5px 0;

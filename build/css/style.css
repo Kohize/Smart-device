@@ -728,7 +728,8 @@ button,
 
 .modal__content {
   position: relative;
-  width: 600px;
+  width: 500px;
+  max-height: 610px;
   padding: 40px;
   background: #00b3ff;
   border-radius: 3px;
@@ -783,7 +784,7 @@ button,
 .modal__heading {
   max-width: 420px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 }
 
 .modal__heading h3 {
@@ -793,7 +794,7 @@ button,
   font-size: 30px;
   line-height: 140.62%;
   color: #ffffff;
-  margin: 0 0 15px 0;
+  margin: 0;
 }
 
 .modal__heading p {
@@ -803,7 +804,7 @@ button,
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
-  margin: 0 0 40px 0;
+  margin: 0 0 0 0;
 }
 
 .modal__form {
@@ -830,6 +831,7 @@ button,
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   border: 0;
+  padding: 15px 0 15px 15px;
 }
 
 .modal__input input:hover,
@@ -839,27 +841,22 @@ button,
 
 .modal__input input::-webkit-input-placeholder {
   color: #ffffff;
-  padding: 15px 0 15px 15px;
 }
 
 .modal__input input::-moz-placeholder {
   color: #ffffff;
-  padding: 15px 0 15px 15px;
 }
 
 .modal__input input:-ms-input-placeholder {
   color: #ffffff;
-  padding: 15px 0 15px 15px;
 }
 
 .modal__input input::-ms-input-placeholder {
   color: #ffffff;
-  padding: 15px 0 15px 15px;
 }
 
 .modal__input input::placeholder {
   color: #ffffff;
-  padding: 15px 0 15px 15px;
 }
 
 .modal__input:not(:last-child) {
@@ -877,6 +874,7 @@ button,
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   border: 0;
+  padding: 25px 0 0 15px;
 }
 
 .modal__input textarea:hover,
@@ -886,27 +884,26 @@ button,
 
 .modal__input textarea::-webkit-input-placeholder {
   color: #ffffff;
-  padding: 25px 0 0 15px;
 }
 
 .modal__input textarea::-moz-placeholder {
   color: #ffffff;
-  padding: 25px 0 0 15px;
 }
 
 .modal__input textarea:-ms-input-placeholder {
   color: #ffffff;
-  padding: 25px 0 0 15px;
 }
 
 .modal__input textarea::-ms-input-placeholder {
   color: #ffffff;
-  padding: 25px 0 0 15px;
 }
 
 .modal__input textarea::placeholder {
   color: #ffffff;
-  padding: 25px 0 0 15px;
+}
+
+.modal__button {
+  margin: 0 0 15px 0;
 }
 
 .modal__button button {
@@ -925,7 +922,6 @@ button,
   border: 0;
   background: #041427;
   border-radius: 3px;
-  margin: 0 0 20px 0;
   cursor: pointer;
 }
 
@@ -1541,10 +1537,15 @@ button,
 }
 
 .header__contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 163px 0 0;
+  margin: 0 150px 0 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 225px 225px;
+  grid-template-columns: 225px 225px;
+  -webkit-column-gap: 27px;
+  -moz-column-gap: 27px;
+  column-gap: 27px;
+  row-gap: 5px;
 }
 
 .header__contact-wrapper {
@@ -1623,6 +1624,10 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  max-width: 180px;
 }
 
 .socials__item:not(:last-child) {
@@ -1652,15 +1657,15 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 51px 350px;
+  padding: 51px 0;
   margin: 0 auto;
-  max-width: 1920px;
+  max-width: 1220px;
 }
 
 .sections {
   min-width: 422px;
   padding: 10px 0 0 0;
-  margin: 0 78px 0 0;
+  margin: 0 60px 0 0;
 }
 
 .sections__title {
@@ -1679,20 +1684,61 @@ button,
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 220px 220px;
+  grid-template-columns: 220px 220px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  height: 150px;
+  -webkit-column-gap: 7%;
+  -moz-column-gap: 7%;
+  column-gap: 7%;
 }
 
 .sections__item {
   max-width: 220px;
+}
+
+.sections__item:nth-child(-n+4) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.sections__item:nth-child(n+5) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.sections__item:nth-child(n+6) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.sections__item:nth-child(n+7) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.sections__item:nth-child(n+8) {
+  grid-column: auto;
+  grid-row: auto;
 }
 
 .sections__item:not(:last-child) {
@@ -1875,7 +1921,7 @@ button,
 
 .benefits {
   padding: 0 25px;
-  margin: 0 0 127px 0;
+  margin: 0 0 146px 0;
 }
 
 .benefits__wrapper {
@@ -1895,10 +1941,10 @@ button,
 .benefits__item {
   position: relative;
   border: 1px solid #ebebeb;
-  padding: 40px 45px 25px 45px;
+  padding: 40px 45px 78px 45px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  min-height: 310px;
+  min-height: auto;
 }
 
 .benefits__item:hover {
@@ -2009,6 +2055,7 @@ button,
   color: #00b2ff;
   margin: 18px 0 0 0;
   cursor: pointer;
+  background-color: #ffffff;
 }
 
 .about__accordion-button:hover {
@@ -2057,6 +2104,7 @@ button,
   -webkit-column-gap: 85px;
   -moz-column-gap: 85px;
   column-gap: 85px;
+  row-gap: 20px;
 }
 
 .service__item {
@@ -2139,7 +2187,7 @@ button,
 .form::before {
   content: "";
   position: absolute;
-  background-image: url("../../img/polygon.png");
+  background-image: url("../img/polygon.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 1265px;
@@ -2220,6 +2268,7 @@ button,
   font-size: 16px;
   line-height: 22px;
   margin: 0 0 20px 0;
+  padding: 15px;
 }
 
 .form__input input:hover,
@@ -2229,27 +2278,22 @@ button,
 
 .form__input input::-webkit-input-placeholder {
   color: #ffffff;
-  padding: 15px 0 15px 15px;
 }
 
 .form__input input::-moz-placeholder {
   color: #ffffff;
-  padding: 15px 0 15px 15px;
 }
 
 .form__input input:-ms-input-placeholder {
   color: #ffffff;
-  padding: 15px 0 15px 15px;
 }
 
 .form__input input::-ms-input-placeholder {
   color: #ffffff;
-  padding: 15px 0 15px 15px;
 }
 
 .form__input input::placeholder {
   color: #ffffff;
-  padding: 15px 0 15px 15px;
 }
 
 .form__input--question {
@@ -2272,6 +2316,7 @@ button,
   font-size: 16px;
   line-height: 22px;
   scrollbar-width: none;
+  padding: 20px 0 90px 15px;
 }
 
 .form__input--question textarea:hover,
@@ -2280,27 +2325,22 @@ button,
 }
 
 .form__input--question textarea::-webkit-input-placeholder {
-  padding: 20px 0 90px 15px;
   color: #ffffff;
 }
 
 .form__input--question textarea::-moz-placeholder {
-  padding: 20px 0 90px 15px;
   color: #ffffff;
 }
 
 .form__input--question textarea:-ms-input-placeholder {
-  padding: 20px 0 90px 15px;
   color: #ffffff;
 }
 
 .form__input--question textarea::-ms-input-placeholder {
-  padding: 20px 0 90px 15px;
   color: #ffffff;
 }
 
 .form__input--question textarea::placeholder {
-  padding: 20px 0 90px 15px;
   color: #ffffff;
 }
 
@@ -2377,7 +2417,7 @@ button,
 .form__checkbox input:checked ~ .form__checkbox-mark::before {
   position: absolute;
   content: "";
-  background: url("../../img/svg/vector.svg");
+  background: url("../img/svg/vector.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 7px;
@@ -2561,12 +2601,18 @@ button,
     padding: 0 65px 0 50px;
   }
 
+  .header__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
   .header__contact {
     display: none;
   }
 
   .header__contact-wrapper--email {
-    margin: 0 25px 0 0;
+    margin: 0;
   }
 
   .header__contact-link {
@@ -2615,9 +2661,15 @@ button,
   }
 
   .sections__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     height: auto;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    column-gap: 0;
   }
 
   .sections-accordion {
@@ -2719,7 +2771,8 @@ button,
   }
 
   .service__wrapper {
-    max-width: 670px;
+    max-width: 100%;
+    padding: 0 50px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     display: -webkit-box;
@@ -2728,12 +2781,12 @@ button,
   }
 
   .service__item {
-    max-width: 670px;
+    max-width: 100%;
     min-height: 250px;
   }
 
   .service__item:not(:last-child) {
-    margin: 0 0 30px 0;
+    margin: 0 0 10px 0;
   }
 
   .service__item h3 {
@@ -2775,9 +2828,10 @@ button,
   }
 
   .form__content {
-    min-width: 670px;
+    min-width: 100%;
     min-height: auto;
     margin: 0 auto;
+    padding: 0 50px;
   }
 
   .form__content h3 {
@@ -2794,25 +2848,6 @@ button,
 
   .form__input--question textarea {
     height: 155px;
-  }
-
-  .form__input--question textarea::-webkit-input-placeholder {
-    padding: 32px 0 0 15px;
-  }
-
-  .form__input--question textarea::-moz-placeholder {
-    padding: 32px 0 0 15px;
-  }
-
-  .form__input--question textarea:-ms-input-placeholder {
-    padding: 32px 0 0 15px;
-  }
-
-  .form__input--question textarea::-ms-input-placeholder {
-    padding: 32px 0 0 15px;
-  }
-
-  .form__input--question textarea::placeholder {
     padding: 32px 0 0 15px;
   }
 
@@ -2886,8 +2921,7 @@ button,
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: start;
-    padding: 35px 55px 0 50px;
-    margin: 0;
+    margin: 0 0 35px 0;
   }
 
   .socials__logo-link {
@@ -2898,8 +2932,12 @@ button,
     padding: 0 0 0 8px;
   }
 
+  .footer {
+    padding: 35px 0;
+  }
+
   .footer__wrapper {
-    min-height: 475px;
+    min-height: auto;
     width: 100%;
     padding: 0;
     -webkit-box-pack: center;
@@ -3183,11 +3221,7 @@ button,
   }
 
   .service__wrapper {
-    max-width: 100%;
-  }
-
-  .service__item {
-    max-width: 100%;
+    padding: 0;
   }
 
   .service__item h3 {
@@ -3224,7 +3258,6 @@ button,
   }
 
   .form__content {
-    min-width: 270px;
     padding: 0 25px;
   }
 
@@ -3259,25 +3292,6 @@ button,
 
   .form__input--question textarea {
     height: 180px;
-  }
-
-  .form__input--question textarea::-webkit-input-placeholder {
-    padding: 24px 0 80px 13px;
-  }
-
-  .form__input--question textarea::-moz-placeholder {
-    padding: 24px 0 80px 13px;
-  }
-
-  .form__input--question textarea:-ms-input-placeholder {
-    padding: 24px 0 80px 13px;
-  }
-
-  .form__input--question textarea::-ms-input-placeholder {
-    padding: 24px 0 80px 13px;
-  }
-
-  .form__input--question textarea::placeholder {
     padding: 24px 0 80px 13px;
   }
 
