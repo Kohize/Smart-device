@@ -220,6 +220,8 @@
 }
 
 .form__button {
+  grid-row: 3;
+
   @media (max-width: 767px) {
     margin: 0 0 16px 0;
   }
@@ -260,6 +262,10 @@
 .form__checkbox {
   display: flex;
   position: relative;
+
+  @media (max-width: 767px) {
+    order: 3;
+  }
 }
 
 .form__checkbox input {

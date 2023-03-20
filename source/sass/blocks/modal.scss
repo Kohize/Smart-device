@@ -155,6 +155,10 @@
   max-width: 420px;
   width: 100%;
   margin: 0 auto;
+
+  form {
+    display: grid;
+  }
 }
 
 .modal__input input {
@@ -211,6 +215,7 @@
 
 .modal__button {
   margin: 0 0 15px 0;
+  grid-row: 4;
 
   button {
     font-family: "RobotoCondensed", "Arial", sans-serif;
@@ -281,7 +286,7 @@
 .modal__checkbox input:checked ~ .modal__checkbox-mark::before {
   position: absolute;
   content: "";
-  background: url("../../img/svg/vector.svg");
+  background: url("../img/svg/vector.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 7px;
